@@ -1,12 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import CadastroProduto from "./components/CadastroProduto";
-import NotFound from "./components/NotFound";
-import CadastroProduto2 from "./components/CadastroProduto2";
+import Home from "./pages/Home";
+import CadastroProduto from "./pages/CadastroProduto";
+import NotFound from "./pages/NotFound";
+import CadastroProduto2 from "./pages/CadastroProduto2";
+import CustomNavbar from "./pages/CustomNavbar";
+
 
 function App() {
   return (
     <Routes>
+      <Route path="/navbar" element={<CustomNavbar/>}/>
       <Route path="/" element={<Home/>}/>
       <Route path="/cadastro-produto" element={<CadastroProduto/>}/>
       <Route path="/cadastro-produto2" element={<CadastroProduto2/>}/>
