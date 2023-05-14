@@ -1,0 +1,39 @@
+.carteira-content{
+    width: 90%;
+    height: 80%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.saldo{ 
+    width: 100%;
+    height: 20vh;
+    color: #4BBE8F;
+    background-color: white;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+#saldo-atual{ 
+    font-size: 2.8vw;
+    padding-left: 5vw;
+    font-weight: 300;
+}
+
+#saldo-valor{ 
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+#saldo-button button{
+    font-size: 2vw;
+    min-width: 6vw;
+    font-weight: 300;
+    border-style: none;
+    background-color: transparent;
+    color: #4BBE8F;
+    cursor: pointer;
+}

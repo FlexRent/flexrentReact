@@ -1,4 +1,5 @@
 import '../../Css/HeaderButtons.css'
+import Carteira from './Carteira'
 
 export default function HeaderButtons(){ 
     return (
@@ -11,7 +12,7 @@ export default function HeaderButtons(){
                 </div>
             </header>
             <div className='content'> 
-
+               <Carteira/>
             </div>
         </section>
 
