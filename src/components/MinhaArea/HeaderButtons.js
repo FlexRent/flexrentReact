@@ -15,7 +15,6 @@ export default function HeaderButtons(){
                <Carteira/>
             </div>
         </section>
-
     )
 
 }

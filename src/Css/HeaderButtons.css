@@ -6,6 +6,7 @@ header{
 .buttons-menu{
     background-color: #fff;
     width: 70%;
+    min-width: 500px;
     position: relative;
 }
 
@@ -25,7 +26,8 @@ header{
     height: 6.5vh;
     width: 13vw;
     min-width: 11.6vh;
-    font-size: 1rem;
+    min-height: 45px;
+    font-size: 0.9rem;
 }
 
 .button-menu:hover {
@@ -35,12 +37,14 @@ header{
 .button-menu:focus{
     background-color: rgba(130, 192, 204, 0.3);
     color: #4BBE8F;
-    font-size: 1.2rem;
+
 }
 
 .content{
 background-color: rgba(130, 192, 204, 0.3);
 width: 70%;
+min-width: 500px;
+
 height: 100vh;
 }
 
