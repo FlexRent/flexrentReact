@@ -5,8 +5,9 @@ header{
 
 .buttons-menu{
     background-color: #fff;
-    width: 70%;
+    /* width: 70%; */
     min-width: 500px;
+    
     position: relative;
 }
 
@@ -25,7 +26,9 @@ header{
     border-style: none;
     height: 6.5vh;
     width: 13vw;
-    min-width: 11.6vh;
+
+    max-width: 230px;
+    min-width: 1.6vh;
     min-height: 45px;
     font-size: 0.9rem;
 }
@@ -42,9 +45,9 @@ header{
 
 .content{
 background-color: rgba(130, 192, 204, 0.3);
-width: 70%;
+/* width: 70%; */
 min-width: 500px;
 
-height: 100vh;
+height: 92vh;
 }
 
