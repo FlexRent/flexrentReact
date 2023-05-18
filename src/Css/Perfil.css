@@ -39,3 +39,28 @@
     height: 1px;
     width: 85%;
 }
+
+.avaliacao span {
+    color: #16697A;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.estrela-box {
+    background-color: #E5E2E2;
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+
+}
+
+.estrela-img{ 
+    background-color: #16697A;
+    width: 40%;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.estrela-img img {
+    width: 50%;
+}

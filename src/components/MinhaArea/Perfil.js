@@ -17,7 +17,24 @@ export default function Carteira(){
                 <button type="button"  data-bs-toggle="modal" data-bs-target="#meuModal"  >Editar</button>
             </div>
             
-            <div className='linhaHorizontal'></div>
+            <div className='linhaHorizontal my-4'></div>
+
+            <div className='avaliacao px-4'> 
+                <span> Avaliações </span>
+
+                <div className='content-estrela d-flex justify-content-center align-items-center py-4'> 
+                    <div className='estrela-box d-flex align-items-center '> 
+                   
+                        <div className='estrela-img d-flex justify-content-center align-items-center'> 
+                            <img src='./star.png'></img>
+                        </div>
+                        <span className='avaliacao-res px-3'>4.87</span>
+                    </div>
+                </div>
+  
+
+            </div>
+
 
             <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
