@@ -3,7 +3,6 @@ import Home from "./components/Home";
 import CadastroProduto from "./components/CadastroProduto";
 import NotFound from "./components/NotFound";
 import CadastroProduto2 from "./components/CadastroProduto2";
-import HeaderButtons from "./components/MinhaArea/HeaderButtons";
 import MinhaArea from "./components/MinhaArea/MinhaArea";
 
 function App() {
