@@ -7,15 +7,15 @@ export default function Carteira(){
 
             <div className='saldo row mb-5'>
 
-                <div className='col-sm-3 d-flex align-items-center justify-content-end' id='saldo-atual'> 
-                     <spam>Saldo atual</spam>
+                <div className='col-12 col-md-3 d-flex align-items-center justify-content-end' id='saldo-atual'> 
+                     <spam>Saldo disponivel</spam>
                 </div>
 
-                <div class="col-sm-6 d-flex align-items-center justify-content-center" id='saldo-valor'>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" id='saldo-valor'>
                     <spam>R$ 398,00</spam>
                 </div>
 
-                <div class="col-sm-3 d-flex align-items-center justify-content-center" id='saldo-button'>
+                <div class="col-12 col-md-3 d-flex align-items-center justify-content-center" id='saldo-button'>
                     <button>Resgatar</button>
                 </div>
                 

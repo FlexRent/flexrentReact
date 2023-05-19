@@ -26,7 +26,6 @@ header{
     border-style: none;
     height: 6.5vh;
     width: 13vw;
-
     max-width: 230px;
     min-width: 1.6vh;
     min-height: 45px;
@@ -35,6 +34,9 @@ header{
 
 .button-menu:hover {
     color: #4BBE8F;
+    font-weight: bold;
+    background-color: #fff;;
+    
 }
 
 .button-menu:focus{
