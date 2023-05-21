@@ -1,4 +1,6 @@
-import '../../Css/Carteira.css'
+import '../../Css/MinhaArea/Carteira.css';
+import CartaoInfo from './CartaoInfo';
+
 
 export default function Carteira(){
     return(
@@ -22,21 +24,25 @@ export default function Carteira(){
             </div>
 
 
-            <div className='cartao-content row'> 
-                <div className='titulo ml-2 mt-2'> 
-                    <h5> Meus cartões</h5>
+            <div className='cartao-content row d-flex justify-content-between'>
+                
+                <div className='bord-box-A col-12 col-md-6 '>
+                    <h5> Meus cartões </h5>
+
+                    <div className=' justify-content-center align-items-center row'> 
+                        <CartaoInfo/>
+                        <CartaoInfo/>
+                        <CartaoInfo/>
+                    </div>
+                    
                 </div>
 
-                <div className='cartoes col-sm-6 d-flex align-items-center justify-content-center'> 
-                    <p> Aqui cartoes </p>
+                <div className='bord-box-B col-12 col-md-6'>
+                    <div className='d-flex align-items-center justify-content-center' id='newCard' > 
+                    <p> Novo cartão </p>
+                    </div>
+                    
                 </div>
-
-                <div className='novo-cartao col-sm-6 d-flex align-items-center justify-content-center '> 
-                    <p> Aqui novo </p>
-                </div>
-
-
-
 
             </div>
          

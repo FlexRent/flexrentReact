@@ -1,4 +1,4 @@
-import '../../Css/HeaderButtons.css'
+import '../../Css/MinhaArea/HeaderButtons.css'
 import Carteira from './Carteira'
 
 export default function HeaderButtons(){ 

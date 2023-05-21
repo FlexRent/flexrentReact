@@ -1,6 +1,7 @@
 .perfil{ 
     background-color: #FCFAFA;
-    height: 100vh;
+    height: 108vh;
+
 }
 
 .circle-content{ 
@@ -51,7 +52,6 @@
     width: 120px;
     height: 40px;
     border-radius: 7px;
-
 }
 
 .estrela-img{ 

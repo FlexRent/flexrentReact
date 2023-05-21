@@ -1,10 +1,10 @@
-import '../../Css/Perfil.css'
+import '../../Css/MinhaArea/Perfil.css'
 
 export default function Carteira(){
     return(
         <section className='perfil row justify-content-center align-items-center circle-content pt-4'> 
             <div className='foto circle-mask '> 
-                <img src='/vampeta.jpg'></img>
+                <img src='/vampeta.jpg' alt='perfil'></img>
             </div>
 
             <div className='info-user pt-5'> 
@@ -26,7 +26,7 @@ export default function Carteira(){
                     <div className='estrela-box d-flex align-items-center '> 
                    
                         <div className='estrela-img d-flex justify-content-center align-items-center'> 
-                            <img src='./star.png'></img>
+                            <img src='./star.png' alt='avaliacao'></img>
                         </div>
                         <span className='avaliacao-res px-3'>4.87</span>
                     </div>
