@@ -18,11 +18,9 @@
 }
 
 #saldo-atual{ 
-    /* font-size: min(max(1.6vw), 2vw); */
     padding-left: 5vw;
     font-weight: 200;
     font-size: 1.5rem;
-    /* background-color: aquamarine; */
 }
 
 
@@ -34,8 +32,7 @@
 
 #saldo-button button{
     font-size: 1.3rem;
-    /* font-size: min(max(20px, 1.5vw), 22px); */
-    /* min-width: 3vw; */
+
     font-weight: 200;
     border-style: none;
     background-color: transparent;
@@ -52,7 +49,7 @@
 
 .cartao-content{
     height: 30vh;
-    min-height: 280px;
+    min-height: 320px;
     min-width: 500px;
     width: 100%;
     min-width: 450px;
@@ -82,12 +79,13 @@
         border-style: solid;
         border-radius: 1vw;
         margin-bottom: 10px;
+        height: 250px;
     }
 
     .bord-box-B{
         border-style: solid;
         border-radius: 1vw;
-        color: green;
+        color: #16697A;
         background-color: none;
     }
 }
@@ -100,8 +98,26 @@
     padding-top: 10px;
 }
 
+#listCard{
+    height: 60%;
+}
 
 #newCard{
     height: 100%;
+}
+
+#newCard button{ 
+    border: none;
+    background: none;
+    color: #135967;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: large;
+}
+
+#newCard button:hover{ 
+    /* font-size: x-large; */
+    font-weight: 600;
+    color: #4BBE8F;
 }
 

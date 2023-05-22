@@ -1,5 +1,6 @@
 import '../../Css/MinhaArea/Carteira.css';
 import CartaoInfo from './CartaoInfo';
+import CartaoForms from './CartaoForms';
 
 
 export default function Carteira(){
@@ -29,17 +30,20 @@ export default function Carteira(){
                 <div className='bord-box-A col-12 col-md-6 '>
                     <h5> Meus cartões </h5>
 
-                    <div className=' justify-content-center align-items-center row'> 
+                    <div className='d-flex align-items-center justify-content-center row' id='listCard'> 
+                        <span className='text-center pt-4'> Você não possui cartão cadastrado.</span>
+                        {/* <CartaoInfo/>
                         <CartaoInfo/>
-                        <CartaoInfo/>
-                        <CartaoInfo/>
+                        <CartaoInfo/> */}
+                        
                     </div>
                     
                 </div>
 
                 <div className='bord-box-B col-12 col-md-6'>
                     <div className='d-flex align-items-center justify-content-center' id='newCard' > 
-                    <p> Novo cartão </p>
+                        <button>  Novo cartão </button>
+                        {/* <CartaoForms/> */}
                     </div>
                     
                 </div>
