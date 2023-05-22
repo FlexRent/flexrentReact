@@ -3,6 +3,8 @@ import CartaoInfo from './CartaoInfo';
 import CartaoForms from './CartaoForms';
 
 
+
+
 export default function Carteira(){
     return(
         
@@ -34,7 +36,7 @@ export default function Carteira(){
                         <span className='text-center pt-4'> Você não possui cartão cadastrado.</span>
                         {/* <CartaoInfo/>
                         <CartaoInfo/>
-                        <CartaoInfo/> */}
+                         <CartaoInfo/> */}
                         
                     </div>
                     
@@ -42,8 +44,8 @@ export default function Carteira(){
 
                 <div className='bord-box-B col-12 col-md-6'>
                     <div className='d-flex align-items-center justify-content-center' id='newCard' > 
-                        <button>  Novo cartão </button>
-                        {/* <CartaoForms/> */}
+                        {/* <button>  Novo cartão </button> */}
+                        <CartaoForms/>
                     </div>
                     
                 </div>
