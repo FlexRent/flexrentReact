@@ -7,6 +7,10 @@ import CadastroUsuario from "./components/CadastroUsuario";
 import CadastroUsuario3 from "./components/CadastroUsuario3";
 import CadastroUsuario2 from "./components/CadastroUsuario2";
 import RecuperarSenha from "./components/RecuperarSenha";
+import CarrinhoPagamento from "./components/carrinho/CarrinhoPagamento";
+import CarrinhoFinal from "./components/carrinho/CarrinhoFinal";
+import DetalhesProduto from "./components/DetalhesProduto";
+import DetalhesLocacao from "./components/DetalheLocacao";
 
 function App() {
   return (
@@ -18,6 +22,11 @@ function App() {
       <Route path="/cadastro-usuario2" element={<CadastroUsuario2/>}/>
       <Route path="/cadastro-usuario3" element={<CadastroUsuario3/>}/>
       <Route path="/recuperar-senha" element={<RecuperarSenha/>}/>
+      <Route path="/carrinho-pagamento" element={<CarrinhoPagamento/>}/>
+      <Route path="/carrinho-final" element={<CarrinhoFinal/>}/>
+      <Route path="/detalhes-produto" element={<DetalhesProduto/>}/>
+      <Route path="/detalhes-locacao" element={<DetalhesLocacao/>}/>
+      
       <Route path="*" element={<NotFound/>}/>
     </Routes>
   );
