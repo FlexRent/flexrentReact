@@ -1,5 +1,5 @@
-import HeaderButtons from "./HeaderButtons";
-import Perfil from "./Perfil";
+import HeaderButtons from "./HeaderContent/HeaderButtons";
+import Perfil from "./Perfil/Perfil";
 
 export default function MinhaArea(){ 
     return ( 
@@ -12,7 +12,6 @@ export default function MinhaArea(){
                 <HeaderButtons/> 
             </div>
         
-
         </section>
     )
 }

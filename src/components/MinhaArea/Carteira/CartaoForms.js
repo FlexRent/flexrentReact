@@ -1,5 +1,5 @@
 
-import '../../Css/MinhaArea/CartaoForms.css'
+import './css/CartaoForms.css'
 import ReactInputMask from 'react-input-mask';
 import { useState } from 'react';
 

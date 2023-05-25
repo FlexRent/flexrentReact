@@ -1,4 +1,4 @@
-import '../../Css/MinhaArea/CartaoInfo.css'
+import './css/CartaoInfo.css'
 
 export default function CartaoInfo(){
     return(

@@ -1,4 +1,4 @@
-import '../../Css/MinhaArea/Perfil.css'
+import './css/Perfil.css'
 
 export default function Carteira(){
     return(
