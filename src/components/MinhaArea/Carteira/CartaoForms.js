@@ -41,7 +41,7 @@ export default function CartaoForms({ clickVoltar }) {
                     </div>
 
                     <div class="col-5">
-                        <label for="inputEmail4" class="form-label">Validade</label>
+                        <label for="validade-cartao" class="form-label">Validade</label>
                         <ReactInputMask class="form-control form-control-sm custom-border" id="validade-cartao" mask={"99 / 99"}/>
                         {/* <input type="email" class="form-control form-control-sm custom-border" id="validade-cartao"/> */}
                     </div>
@@ -49,7 +49,7 @@ export default function CartaoForms({ clickVoltar }) {
                     <div className='col-2'> </div>
 
                     <div class="col-5">
-                        <label for="inputPassword4" class="form-label">CVV</label>
+                        <label for="cvv-cartao" class="form-label">CVV</label>
                         <ReactInputMask className='form-control form-control-sm custom-border' id="cvv-cartao" mask={"999"} />
                         {/* <input  type="number" class="form-control form-control-sm custom-border" id="cvv-cartao" min="0" max="999" /> */}
                     </div>
