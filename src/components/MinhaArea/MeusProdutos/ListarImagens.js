@@ -1,13 +1,14 @@
 import React from "react";
+import './css/listarImagens.css';
 
 const ListarImagem = ({ images }) => {
     console.log(images)
     return (
         
-        <div className="row">
+        <div className="img-preview d-flex ">
            {images.map((url, index) => (
-            <div className="col-md-4" key={index}>
-                <img src={url} alt={`Image ${index}`} className="img-thumbnail" />
+            <div key={index}>
+                <img src={url} alt={`Image ${index}`} className="img-thumbnail mx-3 border-bottom" />
             </div>
            ))}
            

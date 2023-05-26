@@ -19,3 +19,10 @@
 .custom-border{
     border-color: #135967;
 }
+
+@media (max-width: 767px){
+    .forms1 .forms-content {
+        height: 88vh;
+    }
+
+}

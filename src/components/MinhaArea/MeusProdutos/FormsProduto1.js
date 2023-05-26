@@ -54,11 +54,13 @@ export default function FormsProduto1() {
 
                 </div>
 
+                <div className='list-img'> 
+                    <ListarImagens images={imagensSelecionadas} />
+                </div>
+
             </div>
 
-            <div className='row'> 
-            <ListarImagens images={imagensSelecionadas} />
-            </div>
+           
 
         </section>
     )
