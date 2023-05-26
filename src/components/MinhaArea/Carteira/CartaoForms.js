@@ -4,7 +4,12 @@ import ReactInputMask from 'react-input-mask';
 import { useState } from 'react';
 
 
-export default function CartaoForms() {
+export default function CartaoForms({ clickVoltar }) {
+
+    const handleVoltarClick = () => {
+        clickVoltar();
+      };
+
     const [text, setText] = useState('');
     const handleInputChange = (event) => {
     const inputValue = event.target.value;  
@@ -17,7 +22,7 @@ export default function CartaoForms() {
         <div className='forms row'>
             <div className='forms-header d-flex justify-content-center align-items-center'>
                 <h5 className='col-10'> Editar </h5>
-                <button type="submit" className='col-2'> Salvar </button>
+                <button onClick={handleVoltarClick} type="submit" className='col-2'> Salvar </button>
             </div>
 
             <div className='forms-content'>

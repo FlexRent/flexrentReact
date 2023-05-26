@@ -2,7 +2,7 @@ import React from "react";
 import './css/listarImagens.css';
 
 const ListarImagem = ({ images }) => {
-    console.log(images)
+
     return (
         
         <div className="img-preview d-flex ">
