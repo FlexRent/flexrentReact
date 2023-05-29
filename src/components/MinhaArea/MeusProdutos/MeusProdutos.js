@@ -4,30 +4,37 @@ import FormsProduto2 from "./FormsProduto2";
 import ListarMeusProdutos from "./ListarMeusProdutos";
 import './css/meusProdutos.css';
 
+// import FormsProduto2 from "./FormsProduto2";
+
 export default function MeusProdutos() {
 
-    const [novoProduto, setNovoProduto] = useState(false);
+    const [novoProduto, setNovoProduto] = useState(true);
+    const [primeiroForm, setPrimeiroForm] = useState(true);
+    
+    const novoProdutoTela = () => {
+        setNovoProduto(!novoProduto);
+      };
+
+    const trocarForm = () => {
+        setPrimeiroForm(!primeiroForm);
+      };
+
+
     return (
-
         novoProduto ?
-            <>
-                <ListarMeusProdutos />
-                {/* <button onClick={setNovoProduto}> Novo </button> */}
-            </>
+            <div>
+                <ListarMeusProdutos onButtonClick={novoProdutoTela}/>
+            </div>            
             :
-            <>
-                <FormsProduto1/>
-
-            <div className="d-flex justify-content-center mt-3"> 
-                <div className='btn-bottom d-flex justify-content-between'> 
-                    <button className="btn-ant"> Voltar </button>
-                    <button className="btn-ant"> Cancelar </button>
-                    <button className="btn-prox"> Próximo</button>
-                </div> 
-            </div>
+            primeiroForm ?
+                <div> 
+                    <FormsProduto1 back={novoProdutoTela} next={trocarForm} />
+                </div>
+                :
+                <div>
+                    <FormsProduto2 backForm={trocarForm}/>
+                </div>
                 
-            </>
-
     )
 
 }

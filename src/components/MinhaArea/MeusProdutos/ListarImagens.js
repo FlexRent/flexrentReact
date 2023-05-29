@@ -11,7 +11,6 @@ const ListarImagem = ({ images }) => {
                 <img src={url} alt={`Image ${index}`} className="img-thumbnail mx-3 border-bottom" />
             </div>
            ))}
-           
         </div>
        
     );

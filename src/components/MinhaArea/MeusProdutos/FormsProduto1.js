@@ -1,12 +1,12 @@
 import './css/formsProduto1.css'
 import ReactInputMask from 'react-input-mask';
-import ListarImagens from './listarImagens';
+import ListarImagens from './ListarImagens';
 import PhotoUpload from './PhotoUpload';
 import { useState } from 'react';
 
 
 
-export default function FormsProduto1() {
+export default function FormsProduto1( {back, next} ) {
     const [imagensSelecionadas, setImagensSelecionadas] = useState([]);
     const handlePhotoChange = (imagens) => {
         setImagensSelecionadas(imagens)
@@ -57,13 +57,13 @@ export default function FormsProduto1() {
                     <ListarImagens images={imagensSelecionadas} />
                 </div>
             </div>
-            {/* <div className='btn-bottom d-flex justify-content-end mt-3'> 
-                <button > Continuar</button>
-            </div> */}
-            
 
-           
-
+            <div className="d-flex justify-content-center mt-3"> 
+                <div className='btn-bottom d-flex justify-content-between'> 
+                    <button className="btn-ant" onClick={back}> Cancelar </button>
+                    <button className="btn-prox" onClick={next} > Próximo</button>
+                </div> 
+            </div>
         </section>
     )
     // }

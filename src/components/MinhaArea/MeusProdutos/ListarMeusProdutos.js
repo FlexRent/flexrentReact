@@ -1,10 +1,8 @@
 
-
-export default function ListarMeusProdutos(){
+export default function ListarMeusProdutos( {onButtonClick}){
     return (
         <>
-        <h1> OIIIII</h1>
-            <button> Novo </button>
+            <button onClick={onButtonClick}> Novo </button>
         </>
     )
 }
