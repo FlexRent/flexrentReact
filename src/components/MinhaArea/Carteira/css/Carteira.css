@@ -58,7 +58,8 @@
 
 .bord-box-A{
     height: 100%;
-    border-style:solid ;
+    border-style:ridge;
+    border-width: 1px;
     border-right: none;
     border-color: #16697A;
     border-top-left-radius: 1vw;
@@ -67,7 +68,8 @@
 
 .bord-box-B{
     height: 100%;
-    border-style:solid ;
+    border-style:ridge ;
+    border-width: 1px;
     border-left: none;
     border-color: #16697A;
     border-top-right-radius: 1vw;
@@ -76,17 +78,18 @@
 
 @media (max-width: 767px){ 
     .bord-box-A{ 
-        border-style: solid;
-        border-radius: 1vw;
+        border-style: ridge;
+        border-width: 1px;
+        border-radius: 15px;
         margin-bottom: 10px;
         height: 250px;
     }
 
     .bord-box-B{
-        border-style: solid;
-        border-radius: 1vw;
+        border-style: ridge;
+        border-width: 1px;
+        border-radius: 15px;
         color: #16697A;
-        background-color: none;
     }
 }
 

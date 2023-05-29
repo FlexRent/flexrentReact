@@ -5,9 +5,8 @@
     padding: 25px;
 }
 
-.forms2 .forms-content{
+.forms2 .border-style{
     background-color: none;
-    height: 450px;
     width: 90%;
     border-style:solid;
     border-width: 1px;
@@ -16,13 +15,26 @@
     color: #135967;
 }
 
+.forms2 .border-A{
+    height: 350px;
+}
+
 .custom-border{
     border-color: #135967;
 }
 
 @media (max-width: 767px){
-    .forms1 .forms-content {
-        height: 88vh;
+    .forms2 .border-A {
+        height: 600px;
     }
 
+
+}
+
+.forms2 .border-B{
+    height: 180px;
+}
+
+.forms2 .border-B .dias-content span{
+    font-weight: 600;
 }

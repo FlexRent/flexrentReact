@@ -1,16 +1,12 @@
-import { useState } from "react"
-import FormsProduto1 from "./FormsProduto1"
+import { useState } from "react";
+import FormsProduto1 from "./FormsProduto1";
 import FormsProduto2 from "./FormsProduto2";
 import ListarMeusProdutos from "./ListarMeusProdutos";
-import './css/meusProdutos.css'
-
-
+import './css/meusProdutos.css';
 
 export default function MeusProdutos() {
 
     const [novoProduto, setNovoProduto] = useState(false);
-
-
     return (
 
         novoProduto ?
@@ -20,17 +16,17 @@ export default function MeusProdutos() {
             </>
             :
             <>
-                <FormsProduto2/>
+                <FormsProduto1/>
+
             <div className="d-flex justify-content-center mt-3"> 
                 <div className='btn-bottom d-flex justify-content-between'> 
                     <button className="btn-ant"> Voltar </button>
+                    <button className="btn-ant"> Cancelar </button>
                     <button className="btn-prox"> Próximo</button>
                 </div> 
             </div>
                 
             </>
-           
-            // <FormsProduto1 />
 
     )
 

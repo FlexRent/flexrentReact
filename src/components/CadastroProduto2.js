@@ -9,13 +9,13 @@ export default function CadastroProduto2() {
 
             <div className="">                    
                     <input className="" type="checkbox" value="" id="flexCheckDefault" />
-                    <label className="m-1" for="flexCheckDefault">
+                    <label className="m-1" forHtml="flexCheckDefault">
                         Usar endereço de cadastro
                     </label>
                 </div>
                 <div className="">
                     <input className="" type="checkbox" value="" id="flexCheckChecked" />
-                    <label className="m-1" for="flexCheckChecked">
+                    <label className="m-1" forHtml="flexCheckChecked">
                         Cadastrar um novo endereço
                     </label>
                 </div>
@@ -62,13 +62,13 @@ export default function CadastroProduto2() {
                 <div className="">
                     <p>Localização*:</p>
                     <input className="" type="checkbox" value="" id="flexCheckDefault" />
-                    <label className="m-1" for="flexCheckDefault">
+                    <label className="m-1" forHtml="flexCheckDefault">
                         Qualquer horário
                     </label>
                 </div>
                 <div className="">
                     <input className="" type="checkbox" value="" id="flexCheckChecked" />
-                    <label className="m-1" for="flexCheckChecked">
+                    <label className="m-1" forHtml="flexCheckChecked">
                         Horário personalizado
                     </label>
                 </div>
@@ -87,19 +87,19 @@ export default function CadastroProduto2() {
                 <div className="mt-4">
                 <p>Dias de disponibilidade do item:</p>                    
                     <input className="" type="checkbox" value="" id="flexCheckDefault" />
-                    <label className="m-1" for="flexCheckDefault">
+                    <label className="m-1" forHtml="flexCheckDefault">
                         Dias úteis
                     </label>
                 </div>
                 <div className="">
                     <input className="" type="checkbox" value="" id="flexCheckChecked" />
-                    <label className="m-1" for="flexCheckChecked">
+                    <label className="m-1" forHtml="flexCheckChecked">
                         Todos os dias
                     </label>
                 </div>
                 <div className="">
                     <input className="" type="checkbox" value="" id="flexCheckChecked" />
-                    <label className="m-1" for="flexCheckChecked">
+                    <label className="m-1" forHtml="flexCheckChecked">
                         Fim de semana
                     </label>
                 </div>

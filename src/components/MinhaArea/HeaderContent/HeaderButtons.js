@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Carteira from '../Carteira/Carteira'
 import MeusProdutos from '../MeusProdutos/MeusProdutos'
 import './css/HeaderButtons.css'
@@ -13,7 +13,7 @@ export default function HeaderButtons(){
         setComponenteAtivo(comp);
     };
 
-    let componenteSelecionado = 'Carteira';
+    let componenteSelecionado = '';
 
     switch (componenteAtivo){
         case 'Carteira': 
@@ -25,6 +25,10 @@ export default function HeaderButtons(){
         default:
             componenteSelecionado = null;
     }
+
+    useEffect(() => {
+        escolha('Carteira')
+    },[]);
 
 
     return (
