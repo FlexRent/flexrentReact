@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Image, Form, Button, Navbar, Container, Col, Row } from "react-bootstrap";
+import endereço from "../imagens/endereço.png";
+import '../Css/cadastroUsuario/cadastroUsuario2.css';
 
 export default function CadastroUsuario2() {
     const [cep, setCep] = useState("");
@@ -15,9 +17,9 @@ export default function CadastroUsuario2() {
             return;
         }
 
-        setCep(newCep.replace(/[^0-9]/g, "").replace(/(\d{5})(\d{3})?/, "$1-$2"));
+        setCep(newCep);
 
-        if (newCep.length === 9) {
+        if (newCep.length === 8) {
             const url = `https://viacep.com.br/ws/${newCep}/json/`;
             const response = await fetch(url);
             const data = await response.json();
@@ -39,18 +41,19 @@ export default function CadastroUsuario2() {
 
     return (
         <div>
-            <Navbar bg="light">
+            <Navbar className="mb-3" style={{ backgroundColor: '#16697A' }}>
                 <Container>
                     <Navbar.Brand href="#home">Meu Logo</Navbar.Brand>
                 </Container>
             </Navbar>
             <Container>
-                <div className="d-flex justify-content-between align-items-center vh-100">
-                    <div style={{ width: '50%' }}>
-                        <div className="border rounded-top" style={{ backgroundColor: '#4BBE8F' }}>
+                <Row className=" vh-100 align-items-center justify-content-center">
+                    <Col md={6} className="">
+                    <div className="bordaCadastroUsuario2">
+                        <div className="border  " style={{ backgroundColor: '#4BBE8F'}}>
                             <h4 className="ms-3 my-3 text-white">Endereço</h4>
                         </div>
-                        <Form className="border rounded-bottom p-4" style={{ height: '40vh' }}>
+                        <Form className=" form-text p-4">
                             <Row>
                                 <Col>
                                     <Form.Group>
@@ -65,7 +68,7 @@ export default function CadastroUsuario2() {
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="mt-2">
                                 <Col>
                                     <Form.Group controlId="numero">
                                         <Form.Label>Número</Form.Label>
@@ -79,7 +82,7 @@ export default function CadastroUsuario2() {
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="mt-2">
                                 <Col>
                                     <Form.Group controlId="bairro">
                                         <Form.Label>Bairro</Form.Label>
@@ -96,53 +99,24 @@ export default function CadastroUsuario2() {
                                     <Form.Group controlId="estado">
                                         <Form.Label>Estado</Form.Label>
                                         <Form.Select onChange={handleEstadoChange}>
-                                            <option value="">Selecione o estado</option>
-                                            <option value="AC">Acre</option>
-                                            <option value="AL">Alagoas</option>
-                                            <option value="AP">Amapá</option>
-                                            <option value="AM">Amazonas</option>
-                                            <option value="BA">Bahia</option>
-                                            <option value="CE">Ceará</option>
-                                            <option value="DF">Distrito Federal</option>
-                                            <option value="ES">Espírito Santo</option>
-                                            <option value="GO">Goiás</option>
-                                            <option value="MA">Maranhão</option>
-                                            <option value="MT">Mato Grosso</option>
-                                            <option value="MS">Mato Grosso do Sul</option>
-                                            <option value="MG">Minas Gerais</option>
-                                            <option value="PA">Pará</option>
-                                            <option value="PB">Paraíba</option>
-                                            <option value="PR">Paraná</option>
-                                            <option value="PE">Pernambuco</option>
-                                            <option value="PI">Piauí</option>
-                                            <option value="RJ">Rio de Janeiro</option>
-                                            <option value="RN">Rio Grande do Norte</option>
-                                            <option value="RS">Rio Grande do Sul</option>
-                                            <option value="RO">Rondônia</option>
-                                            <option value="RR">Roraima</option>
-                                            <option value="SC">Santa Catarina</option>
+                                           
                                             <option value="SP">São Paulo</option>
-                                            <option value="SE">Sergipe</option>
-                                            <option value="TO">Tocantins</option>
+                                           
                                         </Form.Select>
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <div className="d-flex justify-content-between my-5">
-                                <div className="ms-auto">
-                                    <Button className='px-5' style={{ backgroundColor: '#4BBE8F' }}>Continuar</Button>
-                                </div>
+                            <div className="d-flex justify-content-end">
+                                <Button className="px-5 mt-4" style={{ backgroundColor: '#4BBE8F' }}>Continuar</Button>
                             </div>
                         </Form>
-                    </div>
-                    <div style={{ width: '50%' }}>
-                        <Image src="url_da_imagem" className="ms-5" style={{ height: '60vh' }} />
-                    </div>
-                </div>
+                        </div>
+                    </Col>
+                    <Col md={6}>
+                        <Image src={endereço} className="ms-5" style={{ height: '60vh' }} />
+                    </Col>
+                </Row>
             </Container>
         </div>
-
-
-
     );
 }

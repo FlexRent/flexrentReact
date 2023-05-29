@@ -11,6 +11,7 @@ import CarrinhoPagamento from "./components/carrinho/CarrinhoPagamento";
 import CarrinhoFinal from "./components/carrinho/CarrinhoFinal";
 import DetalhesProduto from "./components/DetalhesProduto";
 import DetalhesLocacao from "./components/DetalheLocacao";
+import DetalhesLocacaoFinalizada from "./components/DetalhesLocacaoFinalizada";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/carrinho-final" element={<CarrinhoFinal/>}/>
       <Route path="/detalhes-produto" element={<DetalhesProduto/>}/>
       <Route path="/detalhes-locacao" element={<DetalhesLocacao/>}/>
+      <Route path="/detalhes-locacao-finalizada" element={<DetalhesLocacaoFinalizada/>}/>
       
       <Route path="*" element={<NotFound/>}/>
     </Routes>

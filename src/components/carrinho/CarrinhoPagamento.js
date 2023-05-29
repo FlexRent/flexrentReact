@@ -38,7 +38,7 @@ const CarrinhoPagamento = () => {
       <Container>
     <Row className="justify-content-center align-items-center vh-100">
 
-      <Col id='borda3' className='p-4 mx-2'  md={5}>
+      <Col id='borda3' className='p-4 mx-1'  md={5}>
         <div className="d-flex">
           <Image src="" alt="Produto" className="me-3" />
           <div className='textocor1'>
@@ -63,7 +63,7 @@ const CarrinhoPagamento = () => {
           value="cadastrado"
           checked={selectedCard === 'cadastrado'}
           onChange={handleCardChange}
-          className="me-3"
+          className="me-3 custom-label"
         />
         <Form.Check
           type="radio"
@@ -72,6 +72,7 @@ const CarrinhoPagamento = () => {
           value="novo"
           checked={selectedCard === 'novo'}
           onChange={handleCardChange}
+          className="custom-label"
         />
       </div>
     </Form.Group>
@@ -84,16 +85,40 @@ const CarrinhoPagamento = () => {
     {selectedCard === 'novo' && (
       <Form.Group>
         <Form.Label>Novo Cartão:</Form.Label>
-        <Form.Control
+        <Form.Control className='mb-1'
           type="text"
-          placeholder="Informações do novo cartão"
+          placeholder="Numero do cartão"
           value={newCardInfo}
           onChange={handleNewCardChange}
         />
+        <Form.Control className='mb-1'
+          type="text"
+          placeholder="Nome impresso"
+          value={newCardInfo}
+          onChange={handleNewCardChange}
+        />
+        <Row>
+          <Col>
+        <Form.Control
+          type="text"
+          placeholder="validade"
+          value={newCardInfo}
+          onChange={handleNewCardChange}
+        />
+        </Col>
+        <Col>
+        <Form.Control
+          type="text"
+          placeholder="CVV"
+          value={newCardInfo}
+          onChange={handleNewCardChange}
+        />
+        </Col>
+        </Row>
       </Form.Group>
     )}
-    <div className="">
-    <Button type="submit" className="mx-auto px-5 mt-3" style={{ backgroundColor: '#16697A' }}>
+    <div className="botaocarrinhopagamento ">
+    <Button type="submit" className="botaocarrinho">
       Alugar
     </Button>
     </div>

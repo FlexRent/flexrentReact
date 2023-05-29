@@ -1,7 +1,7 @@
 import { Image, Row, Col, Form, Button, Navbar, Container } from 'react-bootstrap';
 import '../Css/detalhes/detalhesLocacao.css'
 
-export default function DetalhesLocacao() {
+export default function DetalhesLocacaoFinalizada() {
   return (
     <>
       <Navbar style={{ backgroundColor: '#16697A' }}>
@@ -53,14 +53,14 @@ export default function DetalhesLocacao() {
             </Row>
             <Row>
               <Col xs={6} md={6} className='pb-4'>
-                <p>Horário:</p>
+                <p>Horário de Retirada:</p>
               </Col>
               <Col xs={6} md={6}>
                 <p>Dias Disponíveis:</p>
               </Col>
             </Row>
             <Row>
-              <Col xs={6} md={4} className='pb-5'>
+              <Col xs={6} md={4} className='pb-4'>
                 <p>Retirada:</p>
               </Col>
               <Col xs={6} md={4}>
@@ -70,15 +70,13 @@ export default function DetalhesLocacao() {
                 <p>Status:</p>
               </Col>
             </Row>
-              <div className='pb-2'>
-              <Button className='w-100 butao' >Alugar</Button>
-              </div>
 
-              <Row>
-              <Col className='pb-1'>
-                <h6 className='teste3 text-center'>Conclua a locação após verificar o produto pessoalmente na retirada</h6>
+            <Row>
+              <Col className='pb-4'>
+                <p>Observações Check-in: </p>
               </Col>
             </Row>
+             
            
           </div>
         </Col>

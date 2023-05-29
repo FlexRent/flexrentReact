@@ -1,0 +1,45 @@
+.backgroundlocacao {
+
+    background-color: #489FB5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 420px;
+
+
+}
+
+
+p {
+
+    color: #135967;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h5 {
+
+    color: #16697A;
+}
+
+.bordaDetalheLocacao {
+
+    border-color: #16697A;
+    border-style: solid;
+    height: 420px;
+    padding-top: 80px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-width: 2px;
+}
+
+.butao {
+
+    background-color: #4BBE8F;
+    border-radius: 0px;
+}
+
+.teste3 {
+
+    color: #135967;
+    font-size: 12px;
+}
