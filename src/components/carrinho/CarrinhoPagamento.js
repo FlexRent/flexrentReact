@@ -9,6 +9,7 @@ import {
   Container,
 } from "react-bootstrap";
 import "./css/carrinhoPagamento.css";
+import Header from "../Header/Header";
 
 const CarrinhoPagamento = () => {
   const [selectedCard, setSelectedCard] = useState("cadastrado");
@@ -29,19 +30,8 @@ const CarrinhoPagamento = () => {
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#16697A" }}>
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="logo.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="Logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+      <Header backgroundColor={"#16697A"} />
+
       <Container>
         <Row className="justify-content-center align-items-center vh-100">
           <Col id="borda3" className="p-4 mx-2" md={5}>

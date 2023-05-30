@@ -1,21 +1,10 @@
 import { Image, Form, Button, Navbar, Container } from "react-bootstrap";
+import Header from "../Header/Header";
 
 export default function CadastroUsuario3() {
   return (
     <>
-      <Navbar style={{ backgroundColor: "#16697A" }}>
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="logo.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="Logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+      <Header backgroundColor={"#16697A"} />
       <div className="d-flex justify-content-center align-items-center vh-100">
         <Image
           src="url_da_imagem"

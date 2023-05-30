@@ -1,31 +1,12 @@
-import {
-  Image,
-  Form,
-  Button,
-  Navbar,
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
+import { Image, Form, Button, Container, Row, Col, Navbar } from "react-bootstrap";
 import login from "../../imagens/login.png";
 import "./css/login.css";
+import Header from "../Header/Header";
 
 export default function Login() {
   return (
     <>
-      <Navbar style={{ backgroundColor: "#f8f9fa" }}>
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="logo.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="Logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+      <Header backgroundColor={"#f8f9fa"} />
       <Container>
         <Row>
           <div className="d-flex justify-content-center align-items-center vh-100">

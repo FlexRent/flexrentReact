@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Navbar } from "react-bootstrap";
+import Header from "../Header/Header";
 
 const DetalhesProduto = () => {
   const productImage =
@@ -28,19 +29,7 @@ const DetalhesProduto = () => {
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#16697A" }}>
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="logo.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="Logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+      <Header backgroundColor={"#16697A"} />
 
       <Container
         fluid

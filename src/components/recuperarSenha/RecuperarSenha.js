@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Navbar, Container, Image } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import Header from "../Header/Header";
 
 const RecuperarSenha = () => {
   const [email, setEmail] = useState("");
@@ -27,19 +28,8 @@ const RecuperarSenha = () => {
 
   return (
     <>
-      <Navbar style={{ backgroundColor: "#16697A" }}>
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="logo.png"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="Logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
+      <Header backgroundColor={"#16697A"} />
+
       <Container>
         <div className="d-flex justify-content-center align-items-center vh-100">
           <Image
