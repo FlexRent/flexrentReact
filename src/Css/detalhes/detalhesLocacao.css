@@ -3,7 +3,7 @@
     background-color: #489FB5;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 420px;
+    height: 430px;
 
 
 }
@@ -25,8 +25,8 @@ h5 {
 
     border-color: #16697A;
     border-style: solid;
-    height: 420px;
-    padding-top: 80px;
+    height: 430px;
+   
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-width: 2px;
@@ -36,10 +36,23 @@ h5 {
 
     background-color: #4BBE8F;
     border-radius: 0px;
+    height: 45px;
 }
 
 .teste3 {
 
     color: #135967;
-    font-size: 12px;
+    font-size: 10px;
+   
+}
+
+.textonomeproduto {
+
+    color: #135967;
+}
+
+
+.textoinformacoes {
+
+    font-size: 30px;
 }
