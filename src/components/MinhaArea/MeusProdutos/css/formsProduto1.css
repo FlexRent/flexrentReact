@@ -1,0 +1,32 @@
+
+.header-title h3{ 
+    font-weight: 300;
+    color: #135967;
+    padding: 25px;
+}
+
+.forms1 .forms-content{
+    background-color: none;
+    height: 450px;
+    width: 90%;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #4BBE8F;
+    color: #135967;
+}
+
+.custom-border{
+    border-color: #135967;
+}
+
+@media (max-width: 767px){
+    .forms1 .forms-content {
+        height: 88vh;
+    }
+
+}
+
+.forms1 .btn-bottom{
+    width: 92%;
+}

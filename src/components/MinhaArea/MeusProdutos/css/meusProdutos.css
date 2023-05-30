@@ -1,0 +1,19 @@
+ .btn-bottom{
+    width: 92%;
+}
+
+.btn-bottom .btn-prox{
+    border: none;
+    background: #4BBE8F;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.btn-bottom .btn-ant{
+    border: none;
+    background: #fff;
+    color: #4BBE8F;
+    width: 150px;
+    height: 40px;
+}
