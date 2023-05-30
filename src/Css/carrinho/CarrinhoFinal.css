@@ -1,0 +1,30 @@
+#borda{
+border-color: #16697A;
+border-style: solid;
+border-radius: 1vh;
+border-width: 2px;
+}
+
+#bordasepara {
+    border-right: 1px solid black;
+    height: 100%;
+    
+    
+  }
+
+.ajustealtura{
+
+    height: 100%;
+    
+}
+
+.textocor{
+
+    color: #16697A;
+    font-weight: 500;
+}
+
+.textoProduto{
+
+    color: #489FB5;
+}
