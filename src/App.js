@@ -7,7 +7,7 @@ import MinhaArea from "./components/MinhaArea/MinhaArea";
 
 function App() {
   return (
-    <Routes className="container-fluid d-lg-none">
+    <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/cadastro-produto" element={<CadastroProduto/>}/>
       <Route path="/cadastro-produto2" element={<CadastroProduto2/>}/>

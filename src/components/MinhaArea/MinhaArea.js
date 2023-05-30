@@ -1,10 +1,16 @@
 import HeaderButtons from "./HeaderContent/HeaderButtons";
 import Perfil from "./Perfil/Perfil";
+import Navbar from "../Navbar/Navbar";
 
 export default function MinhaArea(){ 
     return ( 
-        <section className="row"> 
-            <div className="perfil col-12 col-md-4 "> 
+    <section> 
+        <header>    
+            <Navbar/>
+        </header>
+
+        <div className="row flex-xl-nowrap"> 
+            <div className="perfil col-12 col-md-4"> 
                 <Perfil />
             </div>
 
@@ -12,6 +18,7 @@ export default function MinhaArea(){
                 <HeaderButtons/> 
             </div>
         
-        </section>
+        </div>
+    </section>
     )
 }
