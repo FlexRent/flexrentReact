@@ -1,0 +1,49 @@
+.topoFormLogin {
+  background-color: #4bbe8f;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 70%;
+}
+
+.bordaformlogin {
+  border-color: #4bbe8f;
+}
+
+.fullForm {
+  width: 70%;
+  border-color: #4bbe8f;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.botaologin {
+  margin-left: 100px;
+  width: 110px;
+  background-color: #4bbe8f;
+  border-radius: 0px;
+  border-color: #489fb5;
+}
+
+.botaocadastrese {
+  width: 110px;
+  background-color: white;
+  border-radius: 0px;
+  color: #4bbe8f;
+  border-color: #489fb5;
+}
+
+.custom-border {
+  border-color: #4bbe8f;
+}
+
+.esquecisenha {
+  font-size: 12px;
+  text-align: end;
+}
+
+.textoformlogin {
+  color: #135967;
+}

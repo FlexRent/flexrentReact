@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { Row, Col, Image, Form, Button } from 'react-bootstrap';
-
+import React, { useState } from "react";
+import { Row, Col, Image, Form, Button } from "react-bootstrap";
 
 const CarrinhoPagamento = () => {
-  const [selectedCard, setSelectedCard] = useState('cadastrado');
-  const [newCardInfo, setNewCardInfo] = useState('');
+  const [selectedCard, setSelectedCard] = useState("cadastrado");
+  const [newCardInfo, setNewCardInfo] = useState("");
 
   const handleCardChange = (event) => {
     setSelectedCard(event.target.value);
@@ -41,7 +40,7 @@ const CarrinhoPagamento = () => {
               label="Cartão Cadastrado"
               name="paymentMethod"
               value="cadastrado"
-              checked={selectedCard === 'cadastrado'}
+              checked={selectedCard === "cadastrado"}
               onChange={handleCardChange}
             />
             <Form.Check
@@ -49,17 +48,17 @@ const CarrinhoPagamento = () => {
               label="Novo Cartão"
               name="paymentMethod"
               value="novo"
-              checked={selectedCard === 'novo'}
+              checked={selectedCard === "novo"}
               onChange={handleCardChange}
             />
           </Form.Group>
-          {selectedCard === 'cadastrado' && (
+          {selectedCard === "cadastrado" && (
             <Form.Group>
               <Form.Label>Cartões Cadastrados:</Form.Label>
               {/* Renderizar os cartões cadastrados aqui */}
             </Form.Group>
           )}
-          {selectedCard === 'novo' && (
+          {selectedCard === "novo" && (
             <Form.Group>
               <Form.Label>Novo Cartão:</Form.Label>
               <Form.Control
