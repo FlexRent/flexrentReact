@@ -7,6 +7,7 @@ import CadastroUsuario from "./components/CadastroUsuario";
 import CadastroUsuario3 from "./components/CadastroUsuario3";
 import CadastroUsuario2 from "./components/CadastroUsuario2";
 import RecuperarSenha from "./components/RecuperarSenha";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/cadastro-usuario2" element={<CadastroUsuario2/>}/>
       <Route path="/cadastro-usuario3" element={<CadastroUsuario3/>}/>
       <Route path="/recuperar-senha" element={<RecuperarSenha/>}/>
+      <Route path="/login" element={<Login/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
   );
