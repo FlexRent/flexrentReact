@@ -2,10 +2,6 @@ import {
   Image,
   Row,
   Col,
-  Form,
-  Button,
-  Navbar,
-  Container,
 } from "react-bootstrap";
 import Header from "../Header/Header";
 

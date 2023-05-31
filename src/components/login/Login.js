@@ -6,7 +6,7 @@ import Header from "../Header/Header";
 export default function Login() {
   return (
     <>
-      <Header backgroundColor={"#f8f9fa"} />
+      <Header backgroundColor={"#16697A"} />
       <Container>
         <Row>
           <div className="d-flex justify-content-center align-items-center vh-100">
