@@ -22,12 +22,12 @@ export default function ListarMeusProdutos({ onButtonClick }) {
       <div className="row d-flex justify-content-center col-12">
         {produtos.map((produto) => {
           return (
-            <div key={produto.id} className="card col-10 my-3" style={{ maxWidth: "100vw" }}>
+            <div key={produto.id} className="card col-10 my-2" style={{ maxWidth: "100vw", minHeight: "10vh" }}>
               <div className="row">
                 <div className="col-3">
                   <img
                     src={produto.image}
-                    className="card-img m-3 border-radius-10"
+                    className="card-img p-3 border-radius-10"
                     alt={produto.name}
                   />
                 </div>
@@ -48,8 +48,8 @@ export default function ListarMeusProdutos({ onButtonClick }) {
                   </div>
                 </div>
                 <div className="col-2 d-flex flex-column justify-content-around">
-                  <button className="btn">Excluir</button>
                   <button className="btn">Editar</button>
+                  <button className="btn">Excluir</button>
                 </div>
               </div>
             </div>
