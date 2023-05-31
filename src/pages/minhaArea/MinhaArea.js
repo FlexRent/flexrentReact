@@ -1,6 +1,6 @@
-import Header from "../../components/Header/Header";
-import HeaderButtons from "../../components/MinhaArea/HeaderContent/HeaderButtons";
-import Perfil from "../../components/MinhaArea/Perfil/Perfil";
+import Header from "../../components/header/Header";
+import HeaderButtons from "../../components/minhaArea/HeaderContent/HeaderButtons";
+import Perfil from "../../components/minhaArea/Perfil/Perfil";
 
 export default function PageMinhaArea() {
   return (

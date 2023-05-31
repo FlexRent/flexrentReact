@@ -3,7 +3,7 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import Header from "../Header/Header";
+import Header from "../header/Header";
 
 export default function DetalhesLocacao() {
   return (

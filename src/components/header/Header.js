@@ -16,7 +16,7 @@ export default function Header(props) {
             <img
               className="w-50"
               alt="logo da Flex Rent"
-              src={{logo}}
+              src={logo}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

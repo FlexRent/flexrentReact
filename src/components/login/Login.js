@@ -1,7 +1,7 @@
 import { Image, Form, Button, Container, Row, Col, Navbar } from "react-bootstrap";
 import login from "../../assets/login.png";
 import "./css/login.css";
-import Header from "../Header/Header";
+import Header from "../header/Header";
 
 export default function Login() {
   return (

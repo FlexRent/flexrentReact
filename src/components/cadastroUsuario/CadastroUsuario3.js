@@ -1,5 +1,5 @@
 import { Image, Form, Button, Navbar, Container } from "react-bootstrap";
-import Header from "../Header/Header";
+import Header from "../header/Header";
 
 export default function CadastroUsuario3() {
   return (
