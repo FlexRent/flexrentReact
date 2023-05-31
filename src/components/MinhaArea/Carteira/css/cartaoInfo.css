@@ -1,4 +1,4 @@
-.card{
+.rentall-card{
     width: 95%;
     height: 42px;
     background-color: #4BBE8F;
@@ -9,14 +9,14 @@
     margin-top: 18px;
 }
 
-.card button{ 
+.rentall-card button{ 
     border: none;
     background: none;
     padding: 0;
     cursor: pointer;    
 }
 
-.card button img{ 
+.rentall-card button img{ 
     width: 25px;
     
 }

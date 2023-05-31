@@ -1,5 +1,5 @@
 import { Image, Form, Button, Container, Row, Col, Navbar } from "react-bootstrap";
-import login from "../../imagens/login.png";
+import login from "../../assets/login.png";
 import "./css/login.css";
 import Header from "../Header/Header";
 

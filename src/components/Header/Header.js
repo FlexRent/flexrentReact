@@ -1,7 +1,7 @@
 import { Nav, NavDropdown, Navbar, Container } from "react-bootstrap";
+import logo from "../../assets/logo.png";
 
 export default function Header(props) {
-  console.log(props.backgroundColor);
   return (
     <header>
       <Navbar
@@ -16,7 +16,7 @@ export default function Header(props) {
             <img
               className="w-50"
               alt="logo da Flex Rent"
-              src="./logo-flexRent2.png"
+              src={{logo}}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

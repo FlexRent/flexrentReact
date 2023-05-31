@@ -4,7 +4,7 @@ export default function Carteira(){
     return(
         <section className='perfil row justify-content-center align-items-center circle-content pt-4'> 
             <div className='foto circle-mask '> 
-                <img src='/vampeta.jpg' alt='perfil'></img>
+                <img src='../../../assets/vampeta.jpg' alt='perfil'></img>
             </div>
 
             <div className='info-user pt-5'> 
@@ -36,7 +36,7 @@ export default function Carteira(){
             </div>
 
 
-            <div className="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+            <div className="modal fade" id="meuModal" tabIndex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-lg">
                     <div className="modal-content">
                     <div className="modal-header">

@@ -17,8 +17,8 @@ const PhotoUpload = ({ onPhotoChange }) => {
 
     return (
         <div>
-            <label class="form-label mt-1" for="foto-produto">Imagens do produto</label>
-            <input type="file" class="form-control form-control-md" id="foto-produto" accept="image/*" onChange={handlePhotoChange} multiple />
+            <label className="form-label mt-1" for="foto-produto">Imagens do produto</label>
+            <input type="file" className="form-control form-control-md" id="foto-produto" accept="image/*" onChange={handlePhotoChange} multiple />
         </div>
     );
 

@@ -20,15 +20,15 @@ export default function FormsProduto1( {back, next} ) {
 
             <div className='forms-content forms row'>
 
-                <div class="col-12 col-md-6 ">
-                    <label for="nome-produto" class="form-label">Nome</label>
-                    <input type="text" class="form-control form-control-md custom-border" id="nome-produto" />
+                <div className="col-12 col-md-6 ">
+                    <label for="nome-produto" className="form-label">Nome</label>
+                    <input type="text" className="form-control form-control-md custom-border" id="nome-produto" />
 
-                    <label for="marca-produto" class="form-label">Marca</label>
-                    <input type="text" class="form-control form-control-md custom-border" id="marca-produto" />
+                    <label for="marca-produto" className="form-label">Marca</label>
+                    <input type="text" className="form-control form-control-md custom-border" id="marca-produto" />
 
-                    <label for="categoria-produto" class="form-label">Categoria</label>
-                    <select class="form-select form-select-md custom-border" aria-label="Default select example" id="categoria-produto">
+                    <label for="categoria-produto" className="form-label">Categoria</label>
+                    <select className="form-select form-select-md custom-border" aria-label="Default select example" id="categoria-produto">
                         <option selected>Selecione a categoria</option>
                         <option value="1">Praia</option>
                         <option value="2">Camping</option>
@@ -41,15 +41,15 @@ export default function FormsProduto1( {back, next} ) {
 
                 </div>
 
-                <div class="col-12 col-md-6">
-                    <label for="descricao-produto" class="form-label">Descrição</label>
-                    <textarea class="form-control form-control-md custom-border" id="edescricao-produto" rows="4"></textarea>
+                <div className="col-12 col-md-6">
+                    <label for="descricao-produto" className="form-label">Descrição</label>
+                    <textarea className="form-control form-control-md custom-border" id="edescricao-produto" rows="4"></textarea>
 
-                    <label for="preco-produto" class="form-label">Valor do produto</label>
-                    <ReactInputMask class="form-control form-control-md custom-border" id="preco-produto" mask={"R$: 9999,00"} />
+                    <label for="preco-produto" className="form-label">Valor do produto</label>
+                    <ReactInputMask className="form-control form-control-md custom-border" id="preco-produto" mask={"R$: 9999,00"} />
 
-                    <label for="preco-diaria" class="form-label">Valor do aluguel (Diária)</label>
-                    <ReactInputMask class="form-control form-control-md custom-border" id="preco-diaria" mask={"R$: 999"} />
+                    <label for="preco-diaria" className="form-label">Valor do aluguel (Diária)</label>
+                    <ReactInputMask className="form-control form-control-md custom-border" id="preco-diaria" mask={"R$: 999"} />
 
                 </div>
 
