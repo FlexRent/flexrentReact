@@ -1,28 +1,30 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { MinhaAreaContext } from "../../../pages/minhaArea/MinhaAreaContext";
 
 export default function ListarMeusProdutos({ onButtonClick }) {
-  const [produtos, setProdutos] = useState();
+  const listaProdutos = useContext(MinhaAreaContext).produtos;
 
-  function getProdutos() {
-    fetch("http://localhost:8000/api/products")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data.products);
-        setProdutos(data.products);
-      });
+  function deleteProduto(id) {
+    fetch(`http://127.0.0.1:8000/api/products/${id}`, {
+      method: "DELETE",
+    });
+
+    console.log("Produto deletado");
+    window.location.reload(true);
   }
 
-  useEffect(() => {
-    getProdutos();
-  }, []);
-
-  return produtos ? (
+  // console.log(listaProdutos.produtos);
+  return listaProdutos ? (
     <>
       <button onClick={onButtonClick}> Novo </button>
       <div className="row d-flex justify-content-center col-12">
-        {produtos.map((produto) => {
+        {listaProdutos.map((produto) => {
           return (
-            <div key={produto.id} className="card col-10 my-2" style={{ maxWidth: "100vw", minHeight: "10vh" }}>
+            <div
+              key={produto.id}
+              className="card col-10 my-2"
+              style={{ maxWidth: "100vw", minHeight: "10vh" }}
+            >
               <div className="row">
                 <div className="col-3">
                   <img
@@ -47,9 +49,20 @@ export default function ListarMeusProdutos({ onButtonClick }) {
                     </h6>
                   </div>
                 </div>
-                <div className="col-2 d-flex flex-column justify-content-around">
-                  <button className="btn">Editar</button>
-                  <button className="btn">Excluir</button>
+                <div className="col-2 d-flex flex-column justify-content-around align-items-end">
+                  <button
+                    className="btn"
+                    onClick={() => onButtonClick(produto)}
+                  >
+                    Editar
+                  </button>
+
+                  <button
+                    className="btn"
+                    onClick={() => deleteProduto(produto.id)}
+                  >
+                    Excluir
+                  </button>
                 </div>
               </div>
             </div>

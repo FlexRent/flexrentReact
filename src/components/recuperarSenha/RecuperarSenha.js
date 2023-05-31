@@ -20,9 +20,9 @@ const RecuperarSenha = () => {
         "user_id"
       );
 
-      console.log("E-mail enviado com sucesso!");
+      // console.log("E-mail enviado com sucesso!");
     } catch (error) {
-      console.log("Erro ao enviar e-mail:", error);
+      // console.log("Erro ao enviar e-mail:", error);
     }
   };
 
