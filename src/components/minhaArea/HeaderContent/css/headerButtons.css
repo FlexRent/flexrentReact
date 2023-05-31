@@ -1,0 +1,55 @@
+
+header{ 
+ height: 8vh;
+}
+
+.buttons-menu{
+    background-color: #fff;
+    /* width: 70%; */
+    min-width: 500px;
+    
+    position: relative;
+}
+
+.button-group{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+.button-menu{
+    color: #fff;
+    background-color: #489FB5;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    border-style: none;
+    height: 6.5vh;
+    width: 13vw;
+    max-width: 230px;
+    min-width: 1.6vh;
+    min-height: 45px;
+    font-size: 0.9rem;
+}
+
+.button-menu:hover {
+    color: #4BBE8F;
+    font-weight: bold;
+    background-color: #fff;;
+    
+}
+
+.button-menu:focus{
+    background-color: rgba(130, 192, 204, 0.3);
+    color: #4BBE8F;
+
+}
+
+.content{
+background-color: rgba(130, 192, 204, 0.3);
+/* width: 70%; */
+min-width: 500px;
+
+height: 110vh;
+}
+

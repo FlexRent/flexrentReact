@@ -1,0 +1,40 @@
+
+.header-title h3{ 
+    font-weight: 300;
+    color: #135967;
+    padding: 25px;
+}
+
+.forms2 .border-style{
+    background-color: none;
+    width: 90%;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #4BBE8F;
+    color: #135967;
+}
+
+.forms2 .border-A{
+    height: 350px;
+}
+
+.custom-border{
+    border-color: #135967;
+}
+
+@media (max-width: 767px){
+    .forms2 .border-A {
+        height: 600px;
+    }
+
+
+}
+
+.forms2 .border-B{
+    height: 180px;
+}
+
+.forms2 .border-B .dias-content span{
+    font-weight: 600;
+}
