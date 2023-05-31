@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import CadastroProduto from "./components/CadastroProduto";
+import CadastroProduto from "./components/cadastroProduto/CadastroProduto";
 import NotFound from "./components/NotFound";
-import CadastroProduto2 from "./components/CadastroProduto2";
+import CadastroProduto2 from "./components/cadastroProduto/CadastroProduto2";
 import CadastroUsuario from "./components/cadastroUsuario/CadastroUsuario";
 import CadastroUsuario2 from "./components/cadastroUsuario/CadastroUsuario2";
 import CadastroUsuario3 from "./components/cadastroUsuario/CadastroUsuario3";
-import Login from "./components/Login";
+import Login from "./components/login/Login";
 
 function App() {
   return (

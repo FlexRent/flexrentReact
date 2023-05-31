@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Image, Form, Button, Navbar, Container, Col, Row } from "react-bootstrap";
-import endereço from "../../images/endereço.png";
+import endereco from "../../assets/endereco.png";
 import '../../css/cadastrousuario/cadastroUsuario2.css'
 
 export default function CadastroUsuario2() {
@@ -113,7 +113,7 @@ export default function CadastroUsuario2() {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <Image src={endereço} className="ms-5" style={{ height: '60vh' }} />
+                        <Image src={endereco} className="ms-5" style={{ height: '60vh' }} />
                     </Col>
                 </Row>
             </Container>

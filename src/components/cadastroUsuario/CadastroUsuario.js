@@ -1,7 +1,6 @@
 import { Image, Form, Button, Navbar, Container, Col, Row } from 'react-bootstrap';
-import dadosPessoais from "../../images/dadosPessoais.png"
+import dadosPessoais from "../../assets/dadosPessoais.png"
 import '../../css/cadastrousuario/cadastroUsuario.css'
-
 
 export default function CadastroUsuario() {
   return (

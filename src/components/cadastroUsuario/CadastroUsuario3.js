@@ -1,5 +1,5 @@
 import { Image, Form, Button, Navbar, Container } from 'react-bootstrap';
-import documentação from "../../images/documentação.png"
+import documentacao from "../../assets/documentacao.png"
 import '../../css/cadastrousuario/cadastroUsuario3.css'
 
 export default function CadastroUsuario3() {
@@ -19,7 +19,7 @@ export default function CadastroUsuario3() {
         </Container>
       </Navbar>
       <div className="d-flex flex-wrap justify-content-center align-items-center vh-100">
-        <Image src={documentação} className="mx-5" style={{ height: '70vh' }} />
+        <Image src={documentacao} className="mx-5" style={{ height: '70vh' }} />
         <div className="flex-column bordaCadastroUsuario3">
           <div className="border rounded-top w-100" style={{ backgroundColor: '#4BBE8F' }}>
             <h4 className="ms-3 my-3 text-white">Documentação</h4>
