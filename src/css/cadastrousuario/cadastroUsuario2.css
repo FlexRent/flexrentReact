@@ -1,0 +1,29 @@
+.bordaCadastroUsuario2 {
+
+    border-color: #4BBE8F;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 2px;
+   
+   
+    
+}
+
+
+.form-text{
+
+    color: #135967;
+}
+
+.form-control {
+    border-color: #4BBE8F; /* Cor da borda desejada */
+  }
+
+  .form-select {
+
+    border-color: #4BBE8F;
+  }
+
+  label {
+    font-weight: 500; /* Definir o estilo de fonte como bold */
+  }
