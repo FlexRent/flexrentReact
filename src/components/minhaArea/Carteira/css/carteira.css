@@ -1,0 +1,126 @@
+.carteira-content{
+    width: 85%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 90;
+}
+
+.saldo{ 
+    height: 20vh;
+    min-height: 130px;
+    color: #4BBE8F;
+    background-color: white;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    
+}
+
+#saldo-atual{ 
+    padding-left: 5vw;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+
+#saldo-valor{ 
+    min-width: 300px;
+    font-size:3.5rem;
+    font-weight: 600;    
+}
+
+#saldo-button button{
+    font-size: 1.3rem;
+
+    font-weight: 200;
+    border-style: none;
+    background-color: transparent;
+    color: #4BBE8F;
+    cursor: pointer;
+    width: auto;
+}
+
+#saldo-button button:hover { 
+    color: #16697A;
+    font-weight: 400;
+    cursor:pointer;
+}
+
+.cartao-content{
+    height: 30vh;
+    min-height: 320px;
+    min-width: 500px;
+    width: 100%;
+    min-width: 450px;
+    
+}
+
+.bord-box-A{
+    height: 100%;
+    border-style:ridge;
+    border-width: 1px;
+    border-right: none;
+    border-color: #16697A;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.bord-box-B{
+    height: 100%;
+    border-style:ridge ;
+    border-width: 1px;
+    border-left: none;
+    border-color: #16697A;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+@media (max-width: 767px){ 
+    .bord-box-A{ 
+        border-style: ridge;
+        border-width: 1px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        height: 250px;
+    }
+
+    .bord-box-B{
+        border-style: ridge;
+        border-width: 1px;
+        border-radius: 15px;
+        color: #16697A;
+    }
+}
+
+.bord-box-A h5 {
+    color: #16697A;
+    font-weight: 500;
+    font-size: x-large;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#listCard{
+    height: 60%;
+}
+
+#newCard{
+    height: 100%;
+}
+
+#newCard button{ 
+    border: none;
+    background: none;
+    color: #135967;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: large;
+}
+
+#newCard button:hover{ 
+    /* font-size: x-large; */
+    font-weight: 600;
+    color: #4BBE8F;
+}
+

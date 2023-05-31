@@ -1,0 +1,22 @@
+.rentall-card{
+    width: 95%;
+    height: 42px;
+    background-color: #4BBE8F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    margin-top: 18px;
+}
+
+.rentall-card button{ 
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;    
+}
+
+.rentall-card button img{ 
+    width: 25px;
+    
+}
