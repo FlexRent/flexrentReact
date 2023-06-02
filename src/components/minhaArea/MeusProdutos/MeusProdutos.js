@@ -29,11 +29,12 @@ export default function MeusProdutos() {
     </div>
   ) : primeiroForm ? (
     <div className="FormsProduto1">
+      
       <FormsProduto1 produtos={produto} back={novoProdutoTela} next={trocarForm} />
     </div>
   ) : (
     <div className="FormsProduto2">
-      <FormsProduto2 backForm={trocarForm} />
+      <FormsProduto2 produtos={produto}  backForm={trocarForm} />
     </div>
   );
 }

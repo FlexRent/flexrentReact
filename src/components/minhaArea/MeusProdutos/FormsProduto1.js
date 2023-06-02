@@ -1,10 +1,8 @@
-import { useState, useContext } from "react";
+import { useState, useEffect } from "react";
 import "./css/formsProduto1.css";
 import ReactInputMask from "react-input-mask";
 import ListarImagens from "./ListarImagens";
 import PhotoUpload from "./PhotoUpload";
-
-import { MinhaAreaContext } from "../../../pages/minhaArea/MinhaAreaContext";
 
 export default function FormsProduto1({ produtos, back, next }) {
   const [imagensSelecionadas, setImagensSelecionadas] = useState([]);
@@ -15,12 +13,18 @@ export default function FormsProduto1({ produtos, back, next }) {
   const [produtoDescription, setProdutoDescription] = useState(
     produto.description
   );
-  const [produtoPrice, setProdutoPrice] = useState(produto.price);
+  const [produtoPrice, setProdutoPrice] = useState(produto.product_price);
+  const [produtoRentPrice, setProdutoRentPrice] = useState(produto.daily_price);
+  const [produtoCategory, setProdutoCategory] = useState(produto.category);
 
   const handlePhotoChange = (imagens) => {
     setImagensSelecionadas(imagens);
   };
 
+  const handleCategoryChange = (event) => {
+    const selectedCategoryId = event.target.value;
+    setProdutoCategory(selectedCategoryId);
+  };
   return (
     <section className="forms1 row d-flex justify-content-center align-items-center ">
       <div className="header-title">
@@ -58,12 +62,14 @@ export default function FormsProduto1({ produtos, back, next }) {
             className="form-select form-select-md custom-border"
             aria-label="Default select example"
             id="categoria-produto"
+            value={produto.category ? produtoCategory.id : ""}
+            onChange={handleCategoryChange}
           >
-            <option value>Selecione a categoria</option>
-            <option value="1">Praia</option>
-            <option value="2">Camping</option>
-            <option value="3">Esportes</option>
-            <option value="3">Ferramentas</option>
+            <option>Selecione a categoria</option>
+            <option value="1">Esportes</option>
+            <option value="2">Praia</option>
+            <option value="3">Camping</option>
+            <option value="4">Ferramentas</option>
           </select>
 
           <PhotoUpload onPhotoChange={handlePhotoChange} />
@@ -85,20 +91,22 @@ export default function FormsProduto1({ produtos, back, next }) {
             Valor do produto
           </label>
           <ReactInputMask
+            value={produtoPrice ? produtoPrice : ""}
+            onChange={(e) => setProdutoPrice(e.target.value)}
             className="form-control form-control-md custom-border"
             id="preco-produto"
-            mask={"R$: 9999"}
+            // mask={"R$: 9999"}
           />
 
           <label htmlFor="preco-diaria" className="form-label">
             Valor do aluguel (Diária)
           </label>
           <ReactInputMask
-            value={produtoPrice ? produtoPrice : ""}
-            onChange={(e) => setProdutoPrice(e.target.value)}
+            value={produtoRentPrice ? produtoRentPrice : ""}
+            onChange={(e) => setProdutoRentPrice(e.target.value)}
             className="form-control form-control-md custom-border"
             id="preco-diaria"
-            mask={"R$: 999"}
+            // mask={"R$: 999"}
           />
         </div>
 
