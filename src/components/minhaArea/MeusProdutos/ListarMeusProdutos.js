@@ -9,7 +9,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
       method: "DELETE",
     });
 
-    console.log("Produto deletado");
+    // console.log("Produto deletado");
     window.location.reload(true);
   }
 

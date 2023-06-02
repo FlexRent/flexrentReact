@@ -1,9 +1,51 @@
-import { Image, Form, Button, Container, Row, Col, Navbar } from "react-bootstrap";
+import {
+  Image,
+  Form,
+  Button,
+  Container,
+  Row,
+  Col,
+  Navbar,
+} from "react-bootstrap";
 import login from "../../assets/login.png";
 import "./css/login.css";
 import Header from "../header/Header";
+import { useNavigate, redirect, Link } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    fetch("http://localhost:8000/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: formData.get("email"),
+        password: formData.get("password"),
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.token);
+        // salvando o token no localStorage
+        if (data.token !== undefined) {
+          localStorage.setItem("token", data.token);
+          navigate("/");
+        } else {
+          alert("Usuário ou senha incorretos");
+        }
+      });
+  };
+
+  // pegando o valor do token que salvou no localStorage
+  // const token = localStorage.getItem("token");
+  // console.log(token);
+
   return (
     <>
       <Header backgroundColor={"#16697A"} />
@@ -25,7 +67,7 @@ export default function Login() {
                 <div className="topoFormLogin p-1">
                   <h4 className="ms-3 mt-3">Login</h4>
                 </div>
-                <Form className="fullForm p-5">
+                <Form onSubmit={handleSubmit} className="fullForm p-5">
                   <Form.Group
                     controlId="formBasicEmail"
                     className="textoformlogin"
@@ -35,6 +77,7 @@ export default function Login() {
                       type="email"
                       placeholder="Enter email"
                       className="mb-3 custom-border"
+                      name="email"
                     />
                   </Form.Group>
                   <Form.Group
@@ -46,6 +89,7 @@ export default function Login() {
                       type="password"
                       placeholder="Password"
                       className="custom-border"
+                      name="password"
                     />
                   </Form.Group>
                   <h6 className="mt-2 esquecisenha">Esqueceu sua senha</h6>
@@ -53,11 +97,13 @@ export default function Login() {
                   <Row className="mt-5">
                     <Col>
                       <Button className="botaocadastrese px-1">
-                        Cadastre-se
+                        <Link to={"/cadastro-usuario"} className="text-reset text-decoration-none">Cadastre-se</Link>
                       </Button>
                     </Col>
                     <Col>
-                      <Button className="botaologin px-2">Login</Button>
+                      <Button type="submit" className="botaologin px-2">
+                        Login
+                      </Button>
                     </Col>
                   </Row>
                 </Form>

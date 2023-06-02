@@ -11,7 +11,7 @@ import DetalhesProduto from "./components/detalhesProduto/DetalhesProduto";
 import DetalhesLocacao from "./components/detalheLocacao/DetalheLocacao";
 import RecuperarSenha from "./components/recuperarSenha/RecuperarSenha";
 import NotFound from "./components/notFound/NotFound";
-import Login from "./components/login/Login";
+import Login from "./pages/login/Login";
 import MinhaArea from "./pages/minhaArea/MinhaArea";
 
 

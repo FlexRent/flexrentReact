@@ -15,7 +15,7 @@ export default function FormsProduto2({ produtos, backForm }) {
   );
   const [rentDay, setRentDay] = useState(produto.rent_day);
 
-  console.log(produto);
+  // console.log(produto);
 
   
   // ****** Selecionar Endereco ******************
