@@ -4,11 +4,12 @@ import CadastroProduto from "./components/CadastroProduto";
 import NotFound from "./components/NotFound";
 import CadastroProduto2 from "./components/CadastroProduto2";
 import MinhaArea from "./components/MinhaArea/MinhaArea";
+import HomeRent from "./components/Home/HomeRent";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/" element={<HomeRent/>}/>
       <Route path="/cadastro-produto" element={<CadastroProduto/>}/>
       <Route path="/cadastro-produto2" element={<CadastroProduto2/>}/>
       <Route path="/minha-area" element={<MinhaArea/>}/>

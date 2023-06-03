@@ -1,0 +1,81 @@
+.banner{ 
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{ 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.vantagem .titulo { 
+    height: 80vh;
+    background-color: #135967;
+}
+
+.vantagem .titulo h3 { 
+    width: 90%;
+    font-size: 5.2rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: right;
+}
+.vantagem .titulo h3 .ponto{ 
+    color: #4BBE8F;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.vantagem .icons{ 
+    height: 80vh;
+}
+
+.vantagem .icons .titles{
+    height: 12%;
+}
+
+.vantagem .icons .titles span{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #135967;
+}
+
+.vantagem .cards{
+    height: 76%;
+    background-color: rgb(234, 234, 234);
+}
+
+.vantagem .cards .cards-list{
+    height: 45%;
+    width: 80%;
+    min-width: 540px;
+    max-width: 950px; 
+}
+
+
+.cards .card-personalizado{
+    height: 220px;
+    width: 170px;
+}
+
+.cards .card-icon{
+    height: 180px;
+    background-color: #135967;
+    border-radius: 7px;
+}
+
+.cards .card-icon img {
+    width: 70%;
+}
+
+.cards .card-texto {
+    height: 40px;
+}
+
+.cards .card-texto span{
+    color: #135967;
+
+}

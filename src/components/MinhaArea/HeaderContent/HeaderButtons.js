@@ -33,13 +33,13 @@ export default function HeaderButtons(){
 
     return (
         <section>
-            <header className='buttons-menu'> 
+            <div className='buttons-menu'> 
                 <div className='btn-group d-flex justify-content-between button-group'> 
                     <button onClick={() => escolha('MeusProdutos')} type="button" className="button-menu">Meus Produtos</button>
                     <button type="button" className="button-menu">Produtos Locados</button>
                     <button onClick={() => escolha('Carteira')} type="button" className="button-menu">Carteira</button>
                 </div>
-            </header>
+            </div>
             <div className='content'> 
               {componenteSelecionado}
             </div>

@@ -9,8 +9,8 @@ export default function MinhaArea(){
             <Navbar/>
         </header>
 
-        <div className="row flex-xl-nowrap"> 
-            <div className="perfil col-12 col-md-4"> 
+        <div className="row flex-xl-nowrap pt-5"> 
+            <div className="perfil col-12 col-md-4 "> 
                 <Perfil />
             </div>
 
