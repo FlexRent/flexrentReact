@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Navbar, Container, Image } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 
 const RecuperarSenha = () => {
   const [email, setEmail] = useState("");

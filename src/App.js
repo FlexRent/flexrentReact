@@ -3,15 +3,15 @@ import { Route, Routes } from "react-router-dom";
 
 import MinhaArea from "./components/MinhaArea/MinhaArea";
 import HomeRent from "./components/Home/HomeRent";
-import CadastroUsuario from "./components/cadastroUsuario/CadastroUsuario";
-import CadastroUsuario2 from "./components/cadastroUsuario/CadastroUsuario2";
-import CadastroUsuario3 from "./components/cadastroUsuario/CadastroUsuario3";
-import CarrinhoPagamento from "./components/carrinho/CarrinhoPagamento";
-import CarrinhoFinal from "./components/carrinho/CarrinhoFinal";
-import DetalhesProduto from "./components/detalhesProduto/DetalhesProduto";
-import DetalhesLocacao from "./components/detalheLocacao/DetalheLocacao";
-import RecuperarSenha from "./components/recuperarSenha/RecuperarSenha";
-import NotFound from "./components/notFound/NotFound";
+import CadastroUsuario from "./components/CadastroUsuario/CadastroUsuario";
+import CadastroUsuario2 from "./components/CadastroUsuario/CadastroUsuario2";
+import CadastroUsuario3 from "./components/CadastroUsuario/CadastroUsuario3";
+import CarrinhoPagamento from "./components/Carrinho/CarrinhoPagamento";
+import CarrinhoFinal from "./components/Carrinho/CarrinhoFinal";
+import DetalhesProduto from "./components/DetalhesProduto/DetalhesProduto";
+import DetalhesLocacao from "./components/DetalheLocacao/DetalheLocacao";
+import RecuperarSenha from "./components/RecuperarSenha/RecuperarSenha";
+import NotFound from "./components/NotFound/NotFound";
 import Login from "./pages/login/Login";
 // import MinhaArea from "./pages/minhaArea/MinhaArea";
 

@@ -1,5 +1,5 @@
 
-import Login from "../../components/login/Login";
+import Login from "../../components/Login/Login";
 import { LoginContext } from "./LoginContext";
 
 export default function PageLogin() {

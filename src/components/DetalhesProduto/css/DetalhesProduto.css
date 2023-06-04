@@ -1,0 +1,145 @@
+.detalhes-produto-content{
+    height: 100vh;
+}
+
+.detalhes-produto-content .title-product-content{
+    height: 20vh;
+}
+
+.title-product-content h2{
+    color: #135967;
+    font-weight: 200;
+    font-size: 3.1rem;
+}
+
+.product-content{
+    height: 70vh;
+    width: 90%;
+
+    
+}
+
+.product-image{
+    height: 80%;
+    width: 50%;
+    border: 2px solid #16697A;
+    border-radius: 35px 0px 0px 35px;
+    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.099));
+    
+}
+
+.product-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 35px 0px 0px 35px;
+}
+
+.product-info{
+    height: 80%;
+    width: 49%;
+    border: 2px solid #16697A;
+    border-radius: 0px 35px 35px 0px;
+    background-color: #fff;
+    filter: drop-shadow(5px 14px 6px rgba(0, 0, 0, 0.099));
+    
+}
+
+@media (max-width: 1100px){
+
+    .product-info{
+        width: 100%;
+    }
+
+    .product-image{
+        width: 100%;
+    }
+
+}
+
+.product-info .info-desc-content{
+    width: 95%;
+    height: 25%;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura da div */
+    text-overflow: ellipsis;
+
+}
+
+.title-info{
+    color: #4BBE8F;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.info-desc span{
+    font-weight: 300;
+    font-size: larger;
+}
+
+.product-info .localizacao-content{
+    height: 15%;
+    width: 95%;
+}
+
+.localizacao-content .bairro-title{
+    font-weight: 500;
+    font-size: large;
+}
+
+.product-info .periodo-content{
+    height: 23%;
+}
+
+.product-content .linha{
+    height: 2px;
+    width: 90%;
+    margin-top: 5px;
+    background-color: #135967;
+}
+
+.product-content .price-content{
+    height: 28%;
+}
+
+.price-content .title-valor span{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.price-content .total-diaria{
+
+    width: 50%;
+}
+
+.price-content .total-diaria span{
+    height: 80%;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #135967;
+}
+
+.price-content .botao-content{
+    width: 50%;
+}
+
+.price-content .botao-content button {
+    width: 90%;
+    height: 55px;
+    border: none;
+    background-color: #4BBE8F;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.price-content .aviso{
+
+    width: 50%;
+}
+
+.price-content .aviso span{
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #135967;
+    font-style: italic;
+}

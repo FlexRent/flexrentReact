@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import login from "../../assets/login.png";
 import "./css/login.css";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 import { useNavigate, redirect, Link } from "react-router-dom";
 
 export default function Login() {

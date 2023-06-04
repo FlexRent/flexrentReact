@@ -9,7 +9,7 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 
 const CarrinhoFinal = () => {
   const [selectedCard, setSelectedCard] = useState("cadastrado");
