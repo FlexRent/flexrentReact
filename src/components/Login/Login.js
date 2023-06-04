@@ -99,7 +99,14 @@ export default function Login() {
                       name="password"
                     />
                   </Form.Group>
-                  <h6 className="mt-2 esquecisenha">Esqueceu sua senha</h6>
+                  <h6 className="mt-2 esquecisenha">
+                    <Link
+                      to={"/recuperar-senha"}
+                      className="text-reset"
+                    >
+                      Esqueceu sua senha
+                    </Link>
+                  </h6>
 
                   <Row className="mt-5">
                     <Col>

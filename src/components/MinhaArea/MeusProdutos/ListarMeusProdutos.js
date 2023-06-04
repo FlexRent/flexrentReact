@@ -18,7 +18,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
     window.location.reload(true);
   }
 
-  // console.log(listaProdutos.produtos);
+  console.log(listaProdutos.produtos);
   return listaProdutos ? (
     <>
       <button onClick={onButtonClick}> Novo </button>
@@ -33,7 +33,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
               <div className="row">
                 <div className="col-3">
                   <img
-                    src={produto.image}
+                    src={produto.images}
                     className="card-img p-3 border-radius-10"
                     alt={produto.name}
                   />

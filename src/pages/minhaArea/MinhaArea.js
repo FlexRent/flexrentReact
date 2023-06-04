@@ -31,7 +31,7 @@ export default function PageMinhaArea() {
       <Header backgroundColor={"#16697A"} />
       <section>
         <MinhaAreaContext.Provider value={{ produtos }}>
-          <div className="row flex-xl-nowrap pt-5">
+          <div className="row flex-xl-nowrap mt-5">
             <div className="perfil col-12 col-md-4 ">
               <Perfil />
             </div>
