@@ -1,9 +1,14 @@
 .lista-categoria-content{
     min-height: 180vh;
+
 }
 
 .lista-categoria-content .title-list{
     height: 15vh;
+}
+
+.lista-categoria-content .list-product{
+    min-width: 560px;
 }
 
 .title-list h2 {

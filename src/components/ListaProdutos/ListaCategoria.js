@@ -9,7 +9,14 @@ export default function ListaCategoria({ categoria }){
                 <h2> {categoria} </h2>
             </div>
 
-            <div className='d-flex flex-wrap'> 
+            <div className='d-flex list-product justify-content-center align-items-center flex-wrap'> 
+                <CardProduto/>
+                <CardProduto/>
+                <CardProduto/>
+                <CardProduto/>
+                <CardProduto/>
+                <CardProduto/>
+                <CardProduto/>
                 <CardProduto/>
             </div>
             
