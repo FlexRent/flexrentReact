@@ -1,12 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 
 
-import CadastroProduto from "./components/CadastroProduto";
-import NotFound from "./components/NotFound";
-import CadastroProduto2 from "./components/CadastroProduto2";
 import MinhaArea from "./components/MinhaArea/MinhaArea";
 import HomeRent from "./components/Home/HomeRent";
-
 import CadastroUsuario from "./components/cadastroUsuario/CadastroUsuario";
 import CadastroUsuario2 from "./components/cadastroUsuario/CadastroUsuario2";
 import CadastroUsuario3 from "./components/cadastroUsuario/CadastroUsuario3";
@@ -17,7 +13,7 @@ import DetalhesLocacao from "./components/detalheLocacao/DetalheLocacao";
 import RecuperarSenha from "./components/recuperarSenha/RecuperarSenha";
 import NotFound from "./components/notFound/NotFound";
 import Login from "./pages/login/Login";
-import MinhaArea from "./pages/minhaArea/MinhaArea";
+// import MinhaArea from "./pages/minhaArea/MinhaArea";
 
 
 
