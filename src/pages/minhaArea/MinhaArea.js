@@ -6,12 +6,18 @@ import { MinhaAreaContext } from "./MinhaAreaContext";
 
 export default function PageMinhaArea() {
   const [produtos, setProdutos] = useState();
+  const token = localStorage.getItem("token");
 
   function getProdutos() {
-    fetch("http://localhost:8000/api/products")
+    fetch("http://localhost:8000/api/products", {
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    })
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data.products);
+        console.log(data.products);
         setProdutos(data.products);
       });
   }

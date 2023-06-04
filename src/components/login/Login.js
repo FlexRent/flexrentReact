@@ -15,31 +15,46 @@ import { useNavigate, redirect, Link } from "react-router-dom";
 export default function Login() {
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    fetch("http://localhost:8000/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: formData.get("email"),
-        password: formData.get("password"),
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data.token);
-        // salvando o token no localStorage
-        if (data.token !== undefined) {
-          localStorage.setItem("token", data.token);
-          navigate("/");
-        } else {
-          alert("Usuário ou senha incorretos");
-        }
+    try {
+      const loginResponse = await fetch("http://localhost:8000/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.get("email"),
+          password: formData.get("password"),
+        }),
       });
+
+      const loginData = await loginResponse.json();
+
+      if (loginData.token !== undefined) {
+        const userResponse = await fetch("http://localhost:8000/api/user", {
+          headers: {
+            Accept: "application/json",
+            Authorization: `Bearer ${loginData.token}`,
+          },
+        });
+
+        const userData = await userResponse.json();
+        // salvando no localStorage do navegador
+        localStorage.setItem("user", JSON.stringify(userData.user));
+        localStorage.setItem("token", loginData.token);
+        navigate("/");
+      } else {
+        alert("Usuário ou senha incorretos");
+      }
+    } catch (error) {
+      console.error("Ocorreu um erro ao fazer login:", error);
+      alert(
+        "Ocorreu um erro ao fazer login. Por favor, tente novamente mais tarde."
+      );
+    }
   };
 
   // pegando o valor do token que salvou no localStorage
@@ -97,7 +112,12 @@ export default function Login() {
                   <Row className="mt-5">
                     <Col>
                       <Button className="botaocadastrese px-1">
-                        <Link to={"/cadastro-usuario"} className="text-reset text-decoration-none">Cadastre-se</Link>
+                        <Link
+                          to={"/cadastro-usuario"}
+                          className="text-reset text-decoration-none"
+                        >
+                          Cadastre-se
+                        </Link>
                       </Button>
                     </Col>
                     <Col>

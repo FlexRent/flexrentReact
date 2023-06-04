@@ -3,10 +3,15 @@ import { MinhaAreaContext } from "../../../pages/minhaArea/MinhaAreaContext";
 
 export default function ListarMeusProdutos({ onButtonClick }) {
   const listaProdutos = useContext(MinhaAreaContext).produtos;
+  const token = localStorage.getItem("token");
 
   function deleteProduto(id) {
     fetch(`http://127.0.0.1:8000/api/products/${id}`, {
       method: "DELETE",
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`,
+      },
     });
 
     // console.log("Produto deletado");
@@ -72,6 +77,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
     </>
   ) : (
     <>
+    <button onClick={onButtonClick}> Novo </button>
       <p>Tem que fazer uma página para essa parte de carregando</p>
     </>
   );
