@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./css/Home.css";
 import { Container } from "react-bootstrap";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 
 export default function HomeRent() {
     return (
