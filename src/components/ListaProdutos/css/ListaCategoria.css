@@ -1,0 +1,12 @@
+.lista-categoria-content{
+    min-height: 180vh;
+}
+
+.lista-categoria-content .title-list{
+    height: 15vh;
+}
+
+.title-list h2 {
+    color: #4BBE8F;
+    font-size: 2.5rem;
+}

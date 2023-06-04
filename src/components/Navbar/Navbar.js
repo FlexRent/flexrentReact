@@ -20,7 +20,7 @@ function CollapsibleExample({isHome}) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight ) {
+      if (window.scrollY > window.innerHeight /3 ) {
         setNavbarTransparent(false);
         setNavbarScrolled(true);
       } else {

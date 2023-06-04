@@ -3,9 +3,11 @@ import Navbar from "../Navbar/Navbar";
 import "./css/Home.css";
 
 import Footer from "../Footer/Footer";
-import Categorias from "./Categorias";
-import ComoFunciona from "./ComoFunciona";
-import Vantagem from "./Vantagem";
+// import Categorias from "./Categorias";
+// import ComoFunciona from "./ComoFunciona";
+// import Vantagem from "./Vantagem";
+// import ListaTodasCategorias from "../ListaProdutos/ListaTodasCategorias";
+import ListaCategoria from "../ListaProdutos/ListaCategoria";
 
 export default function HomeRent() {
     return (
@@ -16,9 +18,12 @@ export default function HomeRent() {
             <div className="banner">
                 <img src="/banner.png" alt="banner" className="banner-image" />
             </div>
-            <Vantagem/>
+
+            {/* <ListaTodasCategorias/> */}
+            <ListaCategoria categoria={"Camping"}/>
+            {/* <Vantagem/>
             <ComoFunciona/>
-            <Categorias/>
+            <Categorias/> */}
             <Footer />
         </div>
     );
