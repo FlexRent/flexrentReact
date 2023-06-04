@@ -1,7 +1,3 @@
-.navbar{ 
-    /* background-color: transparent; */
-    
-}
 
 .navbar .nav-link{
     color: white;
@@ -12,3 +8,6 @@
     width: 130px;
 }
 
+.nav-transparent {
+    background-color: transparent;
+  }

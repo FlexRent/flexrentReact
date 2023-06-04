@@ -7,9 +7,9 @@ import { useState, useEffect } from 'react';
 import { Button, Form, FormControl } from 'react-bootstrap';
 
 
-function CollapsibleExample() {
+function CollapsibleExample({isHome}) {
 
-  const [navbarTransparent, setNavbarTransparent] = useState(true);
+  const [navbarTransparent, setNavbarTransparent] = useState(isHome);
   const [navbarScrolled, setNavbarScrolled] = useState(false);
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
 
@@ -20,11 +20,11 @@ function CollapsibleExample() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight / 2) {
+      if (window.scrollY > window.innerHeight ) {
         setNavbarTransparent(false);
         setNavbarScrolled(true);
       } else {
-        setNavbarTransparent(true);
+        setNavbarTransparent(isHome);
         setNavbarScrolled(false);
       }
     };
