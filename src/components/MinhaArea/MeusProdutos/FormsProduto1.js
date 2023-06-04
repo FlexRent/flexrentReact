@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./css/formsProduto1.css";
 import ReactInputMask from "react-input-mask";
 import ListarImagens from "./ListarImagens";

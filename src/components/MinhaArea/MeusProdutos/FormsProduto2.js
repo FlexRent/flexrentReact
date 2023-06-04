@@ -17,7 +17,6 @@ export default function FormsProduto2({ produtos, backForm }) {
 
   // console.log(produto);
 
-  
   // ****** Selecionar Endereco ******************
   const [enderecoSelecionado, setEnderecoSelecionado] = useState("");
   const handleOpcaoChange2 = (event) => {

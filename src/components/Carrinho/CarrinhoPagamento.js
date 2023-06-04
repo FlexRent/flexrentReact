@@ -9,7 +9,7 @@ import {
   Container,
 } from "react-bootstrap";
 import "./css/carrinhoPagamento.css";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 
 const CarrinhoPagamento = () => {
   const [selectedCard, setSelectedCard] = useState("cadastrado");

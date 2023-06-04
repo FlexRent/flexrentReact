@@ -1,16 +1,8 @@
-import {
-  Image,
-  Form,
-  Button,
-  Container,
-  Row,
-  Col,
-  Navbar,
-} from "react-bootstrap";
+import { Image, Form, Button, Container, Row, Col } from "react-bootstrap";
 import login from "../../assets/login.png";
 import "./css/login.css";
-import Header from "../header/Header";
-import { useNavigate, redirect, Link } from "react-router-dom";
+import Header from "../Header/Header";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Header from "../../components/header/Header";
-import HeaderButtons from "../../components/minhaArea/HeaderContent/HeaderButtons";
-import Perfil from "../../components/minhaArea/Perfil/Perfil";
+import Header from "../../components/Header/Header";
+import HeaderButtons from "../../components/MinhaArea/HeaderContent/HeaderButtons";
+import Perfil from "../../components/MinhaArea/Perfil/Perfil";
 import { MinhaAreaContext } from "./MinhaAreaContext";
 
 export default function PageMinhaArea() {
@@ -31,8 +31,8 @@ export default function PageMinhaArea() {
       <Header backgroundColor={"#16697A"} />
       <section>
         <MinhaAreaContext.Provider value={{ produtos }}>
-          <div className="row flex-xl-nowrap">
-            <div className="perfil col-12 col-md-4">
+          <div className="row flex-xl-nowrap pt-5">
+            <div className="perfil col-12 col-md-4 ">
               <Perfil />
             </div>
 

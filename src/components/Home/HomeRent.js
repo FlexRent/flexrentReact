@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Header from "../Header/Header";
 import "./css/Home.css";
 
 import Footer from "../Footer/Footer";
@@ -10,21 +10,20 @@ import Footer from "../Footer/Footer";
 import ListaCategoria from "../ListaProdutos/ListaCategoria";
 
 export default function HomeRent() {
-    return (
-        <div>
-            <header>
-                <Navbar isHome={true} />
-            </header>
-            <div className="banner">
-                <img src="/banner.png" alt="banner" className="banner-image" />
-            </div>
+  return (
+    <div>
+      <Header isHome={true} />
 
-            {/* <ListaTodasCategorias/> */}
-            <ListaCategoria categoria={"Camping"}/>
-            {/* <Vantagem/>
+      <div className="banner">
+        <img src="/banner.png" alt="banner" className="banner-image" />
+      </div>
+
+      {/* <ListaTodasCategorias/> */}
+      <ListaCategoria categoria={"Camping"} />
+      {/* <Vantagem/>
             <ComoFunciona/>
             <Categorias/> */}
-            <Footer />
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 }

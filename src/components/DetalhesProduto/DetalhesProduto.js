@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button, Navbar } from "react-bootstrap";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 
 const DetalhesProduto = () => {
   const productImage =
