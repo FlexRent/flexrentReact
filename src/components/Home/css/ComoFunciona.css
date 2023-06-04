@@ -1,0 +1,78 @@
+
+.como-funciona-content {
+    background-color: #F9F8F8;
+    height: 94vh;
+}
+
+.como-funciona-content .title-section{
+    width: 90%;
+    /* height: 15%; */
+}
+
+.title-section h3{
+    width: 80%;
+    font-size: 4.3rem;
+    font-weight: 600;
+    color: #135967;
+    text-align: right;
+}
+
+.como-funciona .subtitle-section{
+    height: 8%;
+    background-color: #135967;
+}
+
+.subtitle-section h3 {
+    font-size: 3.7rem;
+    color: #F9F8F8;
+}
+
+.content-como-funciona {
+    width: 95%;
+    
+}
+
+.cards-content{
+    height: 45%;
+}
+.content-como-funciona .card-como-funciona{
+    height: 75px;
+    width: 100%;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #4BBE8F;
+    margin-top: 10px;
+    padding: 20px;
+}
+.card-como-funciona .card-num{
+    width: 15%;
+    font-size: 3rem;
+    font-weight:bolder;
+    color: #4BBE8F;
+}
+.card-como-funciona .card-txt{
+    width: 80%;
+    font-weight: 300;
+    font-size: 1.1rem;
+
+}
+
+.como-funciona .content-end{
+
+    height: 10vh;
+}
+
+.como-funciona .content-end button {
+    border: none;
+    background-color: #489FB5;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+}
+
+.como-funciona img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
