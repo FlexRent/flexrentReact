@@ -1,0 +1,27 @@
+.not-found-content{
+    height: 80vh;
+}
+
+.not-found-content .not-found{
+    height: 80vh;
+
+}
+
+.not-found img{ 
+    height: 80%;
+    width: auto;
+}
+
+.button-content{
+    height: 20vh;
+}
+
+.button-content button { 
+    border: none;
+    width: 20%;
+    height: 50px;
+    background-color: #16697A;
+    color: #fff;
+    font-size: x-large;
+    font-weight: 200;
+}
