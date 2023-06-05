@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "./css/navbar.css";
 import { useState, useEffect } from "react";
 import { Button, Form, FormControl } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Header({ isHome }) {
   const [navbarTransparent, setNavbarTransparent] = useState(isHome);
@@ -50,8 +51,9 @@ export default function Header({ isHome }) {
       >
         <Container className="mb-0">
           <Navbar.Brand href="#home">
-            {" "}
-            <img src="./logofinal.png" alt="logo" />{" "}
+            <Link to={"/"}>
+              <img src="./logofinal.png" alt="logo" />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -63,8 +65,7 @@ export default function Header({ isHome }) {
               <NavDropdown title="Categoroias" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Camping</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  {" "}
-                  Esportivos{" "}
+                  Esportivos
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
                   Ferramentas
@@ -72,7 +73,6 @@ export default function Header({ isHome }) {
                 <NavDropdown.Item href="#action/3.3">Praia</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  {" "}
                   Ver todos
                 </NavDropdown.Item>
               </NavDropdown>
@@ -98,7 +98,6 @@ export default function Header({ isHome }) {
             <Nav>
               <Nav.Link href="#deets">Aréa de Vinicius</Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
-                {" "}
                 Login
               </Nav.Link>
             </Nav>
