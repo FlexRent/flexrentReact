@@ -1,0 +1,13 @@
+.button-novo { 
+    width: 90%;
+    height: 10vh;
+}
+
+.button-novo button {
+    border: none;
+    width: 100px;
+    height: 35px;
+    background-color: #4BBE8F;
+    color: #fff;
+    font-weight: 200;
+}
