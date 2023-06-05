@@ -19,7 +19,6 @@ export default function ListarMeusProdutos({ onButtonClick }) {
     window.location.reload(true);
   }
 
-  console.log(listaProdutos.produtos);
   return listaProdutos ? (
     <>
       <div className="button-novo d-flex justify-content-end align-items-center">
@@ -27,7 +26,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
       </div>
 
       <div className="row d-flex justify-content-center col-12">
-        {listaProdutos.map((produto) => {
+        {listaProdutos.map((produto) => (
           <div
             key={produto.id}
             className="card col-10 my-2"
@@ -67,13 +66,15 @@ export default function ListarMeusProdutos({ onButtonClick }) {
                 </button>
               </div>
             </div>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
     </>
   ) : (
     <>
-      <button onClick={onButtonClick}> Novo </button>
+      <div className="button-novo d-flex justify-content-end align-items-center">
+        <button onClick={onButtonClick}> Novo </button>
+      </div>
       <p>Tem que fazer uma página para essa parte de carregando</p>
     </>
   );

@@ -9,7 +9,7 @@ export default function PageMinhaArea() {
   const token = localStorage.getItem("token");
 
   function getProdutos() {
-    fetch("http://localhost:8000/api/products", {
+    fetch("http://localhost:8000/api/products/user", {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
@@ -17,7 +17,7 @@ export default function PageMinhaArea() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.products);
+        // console.log(data.products);
         setProdutos(data.products);
       });
   }
