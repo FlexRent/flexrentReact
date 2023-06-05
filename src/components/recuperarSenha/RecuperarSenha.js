@@ -1,28 +1,47 @@
 import React, { useState } from "react";
-import { Form, Button, Navbar, Container, Image } from "react-bootstrap";
-import emailjs from "emailjs-com";
+import { Form, Button, Container, Image } from "react-bootstrap";
 import Header from "../Header/Header";
+import { useNavigate } from "react-router-dom";
 
-const RecuperarSenha = () => {
+export default function RecuperarSenha() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    const formData = new FormData(event.target);
+
+    if (formData.get("password") !== formData.get("confirmPassword")) {
+      return alert("Senhas diferentes");
+    }
 
     try {
-      await emailjs.send(
-        "default_service",
-        "template_id",
+      const response = await fetch(
+        "http://127.0.0.1:8000/api/recoverPassword",
         {
-          to_email: email,
-          link: "http://localhost:3000/redefinir-senha",
-        },
-        "user_id"
+          method: "PATCH",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: formData.get("email"),
+            password: formData.get("password"),
+          }),
+        }
       );
 
-      // console.log("E-mail enviado com sucesso!");
+      if (!response.ok) {
+        throw new Error("Erro na solicitação");
+      }
+
+      const data = await response.json();
+      console.log(data);
+      alert("Senha alterada com sucesso");
+      navigate("/login");
     } catch (error) {
-      // console.log("Erro ao enviar e-mail:", error);
+      console.log("Erro na solicitação:", error);
+      alert("Erro a atualizar a senha, tente novamente");
     }
   };
 
@@ -55,12 +74,35 @@ const RecuperarSenha = () => {
                   type="email"
                   placeholder="Digite seu e-mail"
                   value={email}
+                  name="email"
                   onChange={(event) => setEmail(event.target.value)}
+                />
+              </Form.Group>
+              <Form.Group controlId="password" className="textoformlogin">
+                <Form.Label>Senha</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Senha"
+                  className="custom-border"
+                  name="password"
+                />
+              </Form.Group>
+              <Form.Group
+                controlId="confirmPassword"
+                className="textoformlogin"
+              >
+                <Form.Label>Senha</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Confirme sua senha"
+                  className="custom-border"
+                  name="confirmPassword"
                 />
               </Form.Group>
               <div className="d-flex justify-content-between my-5">
                 <div className="ms-auto">
                   <Button
+                    type="submit"
                     className="px-3"
                     style={{ backgroundColor: "#4BBE8F" }}
                   >
@@ -74,6 +116,4 @@ const RecuperarSenha = () => {
       </Container>
     </>
   );
-};
-
-export default RecuperarSenha;
+}
