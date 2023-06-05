@@ -1,5 +1,34 @@
 import './css/DetalhesProduto.css'
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 export default function DetalhesProduto() {
+
+  const [productImages, setProductImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+
+  useEffect(() => {
+    fetchProductData();
+  }, []);
+
+  const fetchProductData = () => {
+    // Lógica para buscar os dados do produto no banco de dados
+    // Atualize os estados com os dados do produto recuperados
+    const imagesFromDatabase = ['./barraca.jpg', './camping.jpg', './barraca.jpg', './camping.jpg', './barraca.jpg'];
+    setProductImages(imagesFromDatabase);
+  };
+
+  const handlePreviousImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? productImages.length - 1 : prevIndex - 1));
+  };
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === productImages.length - 1 ? 0 : prevIndex + 1));
+  };
+
+
   return (
     <section className="detalhes-produto-content container">
       <div className="title-product-content d-flex justify-content-center align-items-end">
@@ -10,9 +39,17 @@ export default function DetalhesProduto() {
 
         <div className='product-content d-flex flex-wrap '>
 
+        {productImages.length > 0 && (
           <div className='product-image my-1 d-flex justify-content-center align-items-center '>
-            <img src='./barraca.jpg' alt=''/>
+            <button className="btn btn-overlay2" onClick={handlePreviousImage}>
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <img src={productImages[currentImageIndex]} alt=''/>
+            <button className="btn btn-overlay" onClick={handleNextImage}> 
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
           </div>
+          )}
 
           <div className='product-info m-1'>
                 <div className='info-desc-content m-2' >
@@ -32,11 +69,11 @@ export default function DetalhesProduto() {
                   <span className='title-info d-block'> Periodo</span>
                   <div class="d-flex justify-content-between">
                     <div class="flex-grow-2 mx-2">
-                      <label for="dataInicio">Data de Início:</label>
+                      <label for="dataInicio">Retirada</label>
                       <input type="date" id="dataInicio" class="form-control" name="dataInicio"/>
                     </div>
                     <div class="flex-grow-2 mx-2">
-                      <label for="dataFim">Data de Fim:</label>
+                      <label for="dataFim">Devolução</label>
                       <input type="date" id="dataFim" class="form-control" name="dataFim"/>
                     </div>
                   </div>
@@ -73,5 +110,6 @@ export default function DetalhesProduto() {
         </div>
       </div>
     </section>
+
   )
 }

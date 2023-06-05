@@ -3,10 +3,10 @@ import Navbar from "../Navbar/Navbar";
 import "./css/Home.css";
 
 import Footer from "../Footer/Footer";
-// import Categorias from "./Categorias";
-// import ComoFunciona from "./ComoFunciona";
-// import Vantagem from "./Vantagem";
-// import ListaTodasCategorias from "../ListaProdutos/ListaTodasCategorias";
+import Categorias from "./Categorias";
+import ComoFunciona from "./ComoFunciona";
+import Vantagem from "./Vantagem";
+import ListaTodasCategorias from "../ListaProdutos/ListaTodasCategorias";
 import ListaCategoria from "../ListaProdutos/ListaCategoria";
 
 export default function HomeRent() {
@@ -20,10 +20,13 @@ export default function HomeRent() {
             </div>
 
             {/* <ListaTodasCategorias/> */}
-            <ListaCategoria categoria={"Camping"}/>
+            {/* <ListaCategoria categoria={"Camping"}/> */}
             {/* <Vantagem/>
             <ComoFunciona/>
             <Categorias/> */}
+            <Vantagem/>
+            <ComoFunciona/>
+            <Categorias/> 
             <Footer />
         </div>
     );
