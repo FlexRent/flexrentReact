@@ -12,8 +12,8 @@ export default function ListaProdutos(){
       <div className="banner">
         <img src="../assets/banner.png" alt="banner" className="banner-image" />
       </div>
-      {/* <ListaCategoria categoria={"Camping"} /> */}
-      <ListaTodasCategorias/>
+      <ListaCategoria categoria={"Camping"} />
+      {/* <ListaTodasCategorias/> */}
 
       <Footer />
     </div>
