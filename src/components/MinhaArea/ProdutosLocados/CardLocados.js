@@ -6,7 +6,7 @@ export default function CardLocados(){
 
 <div className="card-locado-content d-flex">
   <div className='image-card-content'>
-    <img src='./barraca.jpg' alt='Imagem da barraca' />
+    <img src='./assets/home/barraca.jpg' alt='Imagem da barraca' />
   </div>
 
 <div className='row'>

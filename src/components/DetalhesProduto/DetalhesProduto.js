@@ -20,11 +20,11 @@ export default function DetalhesProduto() {
     // Lógica para buscar os dados do produto no banco de dados
     // Atualize os estados com os dados do produto recuperados
     const imagesFromDatabase = [
-      "./barraca.jpg",
-      "./camping.jpg",
-      "./barraca.jpg",
-      "./camping.jpg",
-      "./barraca.jpg",
+      "./assets/home/barraca.jpg",
+      "./assets/home/camping.jpg",
+      "./assets/home/barraca.jpg",
+      "./assets/home/camping.jpg",
+      "./assets/home/barraca.jpg",
     ];
     setProductImages(imagesFromDatabase);
   };
@@ -86,22 +86,22 @@ export default function DetalhesProduto() {
 
               <div className="periodo-content m-2">
                 <span className="title-info d-block"> Periodo</span>
-                <div class="d-flex justify-content-between">
-                  <div class="flex-grow-2 mx-2">
+                <div className="d-flex justify-content-between">
+                  <div className="flex-grow-2 mx-2">
                     <label for="dataInicio">Retirada</label>
                     <input
                       type="date"
                       id="dataInicio"
-                      class="form-control"
+                      className="form-control"
                       name="dataInicio"
                     />
                   </div>
-                  <div class="flex-grow-2 mx-2">
+                  <div className="flex-grow-2 mx-2">
                     <label for="dataFim">Devolução</label>
                     <input
                       type="date"
                       id="dataFim"
-                      class="form-control"
+                      className="form-control"
                       name="dataFim"
                     />
                   </div>

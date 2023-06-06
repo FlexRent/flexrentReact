@@ -7,7 +7,7 @@ export default function CadastroUsuario3() {
       <Header backgroundColor={"#16697A"} />
       <div className="d-flex justify-content-center align-items-center vh-100">
         <Image
-          src="url_da_imagem"
+          src="./assets/cadastroUsuario/documentacao.png"
           className="mx-5"
           style={{ height: "70vh" }}
         />

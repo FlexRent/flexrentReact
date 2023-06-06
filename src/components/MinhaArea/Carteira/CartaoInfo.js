@@ -9,13 +9,13 @@ export default function CartaoInfo(){
 
         <div className='col-2'> 
             <button> 
-                <img src='../../../assets/editar.png' alt="editar"/>
+                <img src='./assets/minhaArea/editar.png' alt="editar"/>
             </button>
 
         </div>
         <div className='col-2'> 
         <button>  
-            <img src='../../../assets/lixeira.png' alt="excluir"/>
+            <img src='./assets/minhaArea/lixeira.png' alt="excluir"/>
         </button>
         </div>
         

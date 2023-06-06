@@ -19,7 +19,7 @@ return (
 
                         <div className="card-personalizado">
                             <div className="card-icon d-flex align-items-center justify-content-center">
-                                <img src="./economia.png" alt=""/>
+                                <img src="./assets/home/economia.png" alt=""/>
                             </div>
                             <div className="card-texto text-center">
                                 <span> Ecônomia</span>
@@ -28,7 +28,7 @@ return (
 
                         <div className="card-personalizado">
                             <div className="card-icon d-flex align-items-center justify-content-center">
-                                <img src="./earth.png"  alt="" />
+                                <img src="./assets/home/earth.png"  alt="" />
                             </div>
                             <div className="card-texto text-center">
                                 <span> Reduz o consumo excessivo</span>
@@ -37,7 +37,7 @@ return (
 
                         <div className="card-personalizado">
                             <div className="card-icon d-flex align-items-center justify-content-center">
-                                <img src="./flexibilidade.png" alt=""/>
+                                <img src="./assets/home/flexibilidade.png" alt=""/>
                             </div>
                             <div className="card-texto text-center">
                                 <span> Flexibilidade</span>
@@ -50,7 +50,7 @@ return (
 
                         <div className="card-personalizado">
                             <div className="card-icon d-flex align-items-center justify-content-center">
-                                <img src="./mala.png" alt=""/>
+                                <img src="./assets/home/mala.png" alt=""/>
                             </div>
                             <div className="card-texto text-center">
                                 <span> Oportuinidade de negócios</span>
@@ -59,7 +59,7 @@ return (
 
                         <div className="card-personalizado">
                             <div className="card-icon d-flex align-items-center justify-content-center">
-                                <img src="./cashBack.png" alt=""/>
+                                <img src="./assets/home/cashBack.png" alt=""/>
                             </div>
                             <div className="card-texto text-center">
                                 <span>Retorno do investimento</span>
@@ -68,7 +68,7 @@ return (
 
                         <div className="card-personalizado">
                             <div className="card-icon d-flex align-items-center justify-content-center">
-                                <img src="./rendaextra.png" alt=""/>
+                                <img src="./assets/home/rendaextra.png" alt=""/>
                             </div>
                             <div className="card-texto text-center">
                                 <span> Renda extra </span>

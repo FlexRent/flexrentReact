@@ -10,7 +10,7 @@ import CarrinhoPagamento from "./components/Carrinho/CarrinhoPagamento";
 import CarrinhoFinal from "./components/Carrinho/CarrinhoFinal";
 import DetalhesProduto from "./components/DetalhesProduto/DetalhesProduto";
 import DetalhesLocacao from "./components/DetalheLocacao/DetalheLocacao";
-// import RecuperarSenha from "./components/RecuperarSenha/RecuperarSenha";
+import RecuperarSenha from "./components/RecuperarSenha/RecuperarSenha";
 import NotFound from "./components/NotFound/NotFound";
 import Login from "./pages/login/Login";
 import MinhaArea from "./pages/minhaArea/MinhaArea";
@@ -22,7 +22,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
       <Route path="/login" element={<Login />} />
-      {/* <Route path="/recuperar-senha" element={<RecuperarSenha />} /> */}
+      <Route path="/recuperar-senha" element={<RecuperarSenha />} />
       <Route path="/carrinho-pagamento" element={<CarrinhoPagamento />} />
       <Route path="/detalhes-produto" element={<DetalhesProduto />} />
       <Route path="/detalhes-locacao" element={<DetalhesLocacao />} />

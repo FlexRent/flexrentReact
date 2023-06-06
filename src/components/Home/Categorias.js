@@ -14,28 +14,28 @@ export default function Categorias(){
                     
                     <div className="card-cat text-center p-2">
                         <div className="image-card-cat">
-                            <img src="./camping.jpg" alt="camping"/>
+                            <img src="./assets/home/camping.jpg" alt="camping"/>
                         </div>
                         <span> Camping </span>
                     </div>
 
                     <div className="card-cat text-center p-2">
                         <div className="image-card-cat">
-                        <img src="./esporte.jpg" alt="esporte"/>
+                        <img src="./assets/home/esporte.jpg" alt="esporte"/>
                         </div>
                         <span> Esportes </span>
                     </div>
 
                     <div className="card-cat text-center p-2">
                         <div className="image-card-cat">
-                        <img src="./ferramentas.jpg" alt="ferramentas"/>
+                        <img src="./assets/home/ferramentas.jpg" alt="ferramentas"/>
                         </div>
                         <span > Ferramentas </span>
                     </div>
 
                     <div className="card-cat text-center p-2">
                         <div className="image-card-cat">
-                        <img src="./praia.jpg" alt="praia"/>
+                        <img src="./assets/home/praia.jpg" alt="praia"/>
                         </div>
                         <span > Praia </span>
                     </div>

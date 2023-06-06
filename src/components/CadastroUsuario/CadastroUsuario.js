@@ -8,18 +8,18 @@ export default function CadastroUsuario() {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="logo.png"
+              src="./assets/logofinal.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
-              alt="Logo"
+              alt="FlexRent"
             />
           </Navbar.Brand>
         </Container>
       </Navbar>
       <Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
-        <Image src="url_da_imagem" className=" ms-5" style={{ height: '60vh' }} />
+        <Image src="./assets/cadastroUsuario/dadosPessoais.png" className=" ms-5" style={{ height: '60vh' }} />
         <div className="d-flex flex-column justify-content-center align-items-center">
           <div className="border rounded-top" style={{ width: '80%', backgroundColor: '#4BBE8F' }} >
             <h4 className=" ms-3 my-3 text-white" >Dados pessoais</h4>

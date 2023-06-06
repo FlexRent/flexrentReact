@@ -18,7 +18,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
     // console.log("Produto deletado");
     window.location.reload(true);
   }
-
+console.log(listaProdutos)
   return listaProdutos ? (
     <>
       <div className="button-novo d-flex justify-content-end align-items-center">

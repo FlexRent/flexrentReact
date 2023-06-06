@@ -52,7 +52,7 @@ export default function RecuperarSenha() {
       <Container>
         <div className="d-flex justify-content-center align-items-center vh-100">
           <Image
-            src="url_da_imagem"
+            src="./assets/recuperarSenha/recuperarSenha.png"
             className="mx-5"
             style={{ height: "60vh" }}
           />

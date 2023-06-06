@@ -5,7 +5,7 @@ export default function NotFound() {
     <section>
       <div className="not-found-content d-flex justify-content-center">
         <div className="not-found d-flex align-items-end">
-          <img alt="Not Found" src="./notfound.jpg" />
+          <img alt="Not Found" src="./assets/notFound/notfound.jpg" />
         </div>
       </div>
       <div className="button-content">

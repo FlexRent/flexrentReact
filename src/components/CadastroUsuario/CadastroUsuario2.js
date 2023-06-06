@@ -136,7 +136,7 @@ export default function CadastroUsuario2() {
                         </Form>
                     </div>
                     <div style={{ width: '50%' }}>
-                        <Image src="url_da_imagem" className="ms-5" style={{ height: '60vh' }} />
+                        <Image src="./assets/cadastroUsuario/endereco.png" className="ms-5" style={{ height: '60vh' }} />
                     </div>
                 </div>
             </Container>
