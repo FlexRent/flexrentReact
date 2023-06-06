@@ -10,21 +10,19 @@ import CarrinhoPagamento from "./components/Carrinho/CarrinhoPagamento";
 import CarrinhoFinal from "./components/Carrinho/CarrinhoFinal";
 import DetalhesProduto from "./components/DetalhesProduto/DetalhesProduto";
 import DetalhesLocacao from "./components/DetalheLocacao/DetalheLocacao";
-import RecuperarSenha from "./components/RecuperarSenha/RecuperarSenha";
+// import RecuperarSenha from "./components/RecuperarSenha/RecuperarSenha";
 import NotFound from "./components/NotFound/NotFound";
 import Login from "./pages/login/Login";
 import MinhaArea from "./pages/minhaArea/MinhaArea";
-
-
-
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomeRent/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/recuperar-senha" element={<RecuperarSenha />} />
+      {/* <Route path="/recuperar-senha" element={<RecuperarSenha />} /> */}
       <Route path="/carrinho-pagamento" element={<CarrinhoPagamento />} />
       <Route path="/detalhes-produto" element={<DetalhesProduto />} />
       <Route path="/detalhes-locacao" element={<DetalhesLocacao />} />
