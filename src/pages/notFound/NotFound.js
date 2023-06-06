@@ -1,12 +1,13 @@
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import NotFound from "../../components/NotFound/NotFound";
+import NotFoundComponent from "../../components/NotFound/NotFoundComponent";
+
 
 export default function NotFound() {
   return (
     <>
-      <Header backgroundColor={"#16697A"} />
-      <NotFound />
+      <Header/>
+        <NotFoundComponent />
       <Footer />
     </>
   );

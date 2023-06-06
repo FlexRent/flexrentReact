@@ -56,7 +56,7 @@ export default function Header({ isHome }) {
         <Container className="mb-0">
           <Navbar.Brand href="#home">
             <Link to={"/"}>
-              <img src="./logofinal.png" alt="logo" />
+              <img src='./assets/logofinal.png' alt="logo" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle

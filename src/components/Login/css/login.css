@@ -4,6 +4,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 70%;
+  min-width: 370px;
 }
 
 .bordaformlogin {
@@ -12,6 +13,8 @@
 
 .fullForm {
   width: 70%;
+  min-width: 370px;
+  
   border-color: #4bbe8f;
   border-style: solid;
   border-width: 1px;
@@ -20,19 +23,36 @@
 }
 
 .botaologin {
-  margin-left: 100px;
-  width: 110px;
+  /* margin-left: 100px; */
+  width: 100px;
   background-color: #4bbe8f;
   border-radius: 0px;
-  border-color: #489fb5;
+ border: none;
 }
 
 .botaocadastrese {
-  width: 110px;
+  width: 100px;
   background-color: white;
   border-radius: 0px;
   color: #4bbe8f;
-  border-color: #489fb5;
+  border-color: #fff;
+}
+
+.botaocadastrese:hover{ 
+  background-color: #4bbe8f;
+  border: none;
+}
+
+.buttons-login{
+  width: 100%;
+}
+
+.botaologin:hover{
+  background-color: white;
+  color: #4bbe8f;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4bbe8f;
 }
 
 .custom-border {

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Image, Form, Button, Navbar, Container, Col, Row } from "react-bootstrap";
+import { Image, Form, Button, Container, Col, Row } from "react-bootstrap";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export default function CadastroUsuario2() {
     const [cep, setCep] = useState("");
@@ -38,19 +40,16 @@ export default function CadastroUsuario2() {
     };
 
     return (
-        <div>
-            <Navbar bg="light">
-                <Container>
-                    <Navbar.Brand href="#home">Meu Logo</Navbar.Brand>
-                </Container>
-            </Navbar>
+        <div className="pt-4">
+           <Header/>
             <Container>
-                <div className="d-flex justify-content-between align-items-center vh-100">
-                    <div style={{ width: '50%' }}>
+                <div className="d-flex justify-content-between align-items-center vh-100 row">
+                    <div className= "col-12 col-md-6 pt-3">
                         <div className="border rounded-top" style={{ backgroundColor: '#4BBE8F' }}>
                             <h4 className="ms-3 my-3 text-white">Endereço</h4>
                         </div>
-                        <Form className="border rounded-bottom p-4" style={{ height: '40vh' }}>
+
+                        <Form className="border rounded-bottom p-4" style={{ height: '36vh' }}>
                             <Row>
                                 <Col>
                                     <Form.Group>
@@ -128,18 +127,20 @@ export default function CadastroUsuario2() {
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <div className="d-flex justify-content-between my-5">
+                            <div className="d-flex justify-content-between mt-5">
                                 <div className="ms-auto">
-                                    <Button className='px-5' style={{ backgroundColor: '#4BBE8F' }}>Continuar</Button>
+                                    <Button className='px-5' style={{border: 'none', backgroundColor: '#4BBE8F' } }>Continuar</Button>
                                 </div>
                             </div>
                         </Form>
                     </div>
-                    <div style={{ width: '50%' }}>
-                        <Image src="url_da_imagem" className="ms-5" style={{ height: '60vh' }} />
+
+                    <div className= "col-12 col-md-6 d-flex justify-content-center align-items-center" style={{height: '50vh'}}>
+                        <img src="../assets/endereco.png" className="ms-5" style={{ height: '100%' }} />
                     </div>
                 </div>
             </Container>
+            <Footer/>
         </div>
 
 

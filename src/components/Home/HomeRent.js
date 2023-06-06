@@ -13,16 +13,20 @@ export default function HomeRent() {
   return (
     <div>
       <Header isHome={true} />
+        <div className="banner">
+          <img src="../assets/banner.png" alt="banner" className="banner-image" />
+        </div>
 
             {/* <ListaTodasCategorias/> */}
-            {/* <ListaCategoria categoria={"Camping"}/> */}
+            <ListaCategoria categoria={"Camping"}/>
             {/* <Vantagem/>
             <ComoFunciona/>
             <Categorias/> */}
-            <Vantagem/>
+            
+            {/* <Vantagem/>
             <ComoFunciona/>
             <Categorias/> 
-            <Footer />
+            <Footer /> */}
         </div>
     );
 }

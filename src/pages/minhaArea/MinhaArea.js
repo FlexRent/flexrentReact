@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import HeaderButtons from "../../components/MinhaArea/HeaderContent/HeaderButtons";
 import Perfil from "../../components/MinhaArea/Perfil/Perfil";
 import { MinhaAreaContext } from "./MinhaAreaContext";
+import Footer from "../../components/Footer/Footer";
 
 export default function PageMinhaArea() {
   const [produtos, setProdutos] = useState();
@@ -29,7 +30,7 @@ export default function PageMinhaArea() {
   return (
     <>
       <Header backgroundColor={"#16697A"} />
-      <section>
+      <section className="container">
         <MinhaAreaContext.Provider value={{ produtos }}>
           <div className="row flex-xl-nowrap mt-5">
             <div className="perfil col-12 col-md-4 ">
@@ -42,6 +43,7 @@ export default function PageMinhaArea() {
           </div>
         </MinhaAreaContext.Provider>
       </section>
+      <Footer />
     </>
   );
 }

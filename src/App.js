@@ -11,9 +11,11 @@ import CarrinhoFinal from "./components/Carrinho/CarrinhoFinal";
 import DetalhesProduto from "./components/DetalhesProduto/DetalhesProduto";
 import DetalhesLocacao from "./components/DetalheLocacao/DetalheLocacao";
 import RecuperarSenha from "./components/RecuperarSenha/RecuperarSenha";
-import NotFound from "./components/NotFound/NotFound";
+import NotFound from "./pages/notFound/NotFound";
 import Login from "./pages/login/Login";
+import Home from "./pages/home/Home";
 import MinhaArea from "./pages/minhaArea/MinhaArea";
+import ListaProdutos from "./pages/produtos/ListaProdutos";
 
 
 
@@ -21,7 +23,7 @@ import MinhaArea from "./pages/minhaArea/MinhaArea";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomeRent/>}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/cadastro-usuario" element={<CadastroUsuario />} />
       <Route path="/login" element={<Login />} />
       <Route path="/recuperar-senha" element={<RecuperarSenha />} />
@@ -32,7 +34,8 @@ function App() {
       <Route path="/cadastro-usuario2" element={<CadastroUsuario2 />} />
       <Route path="/cadastro-usuario3" element={<CadastroUsuario3 />} />
       <Route path="/carrinho-final" element={<CarrinhoFinal />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/produtos" element={<ListaProdutos />} />
+      <Route path="*" element={<NotFound/>} />
     </Routes>
   );
 }
