@@ -12,6 +12,10 @@ export default function Header({ isHome }) {
   const [navbarScrolled, setNavbarScrolled] = useState(false);
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
 
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  console.log(user);
+
   const navbarBackgroundColor = navbarTransparent ? "transparent" : "#16697A";
   const navbarStyle = {
     backgroundColor:
@@ -90,16 +94,20 @@ export default function Header({ isHome }) {
                 </Button>
               </Form>
             </Nav>
-
-            {/* <Nav> */}
-
-            {/* </Nav> */}
-
             <Nav>
-              <Nav.Link href="#deets">Aréa de Vinicius</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Login
-              </Nav.Link>
+              <Nav.Link>{user ? user.first_name : ""}</Nav.Link>
+              {user ? (
+                <Nav.Link eventKey={2}>Logout</Nav.Link>
+              ) : (
+                <Nav.Link eventKey={2}>
+                  <Link
+                    to={"/login"}
+                    className="text-reset text-decoration-none"
+                  >
+                    Login
+                  </Link>
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
