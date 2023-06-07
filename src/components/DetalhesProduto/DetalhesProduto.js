@@ -7,6 +7,8 @@ import {
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./css/DetalhesProduto.css";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function DetalhesProduto() {
   const [productImages, setProductImages] = useState([]);
@@ -27,7 +29,7 @@ export default function DetalhesProduto() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.product);
+        // console.log(data.product);
         setProduct(data.product);
       });
 
@@ -161,7 +163,7 @@ export default function DetalhesProduto() {
       <Header />
       <section className="detalhes-produto-content container">
         <div className="title-product-content d-flex justify-content-center align-items-end">
-          <h2>Barraca</h2>
+          <h2>Barraca Quechua confortável</h2>
         </div>
 
         <div className="d-flex flex-wrap justify-content-center align-items-center">
@@ -187,8 +189,8 @@ export default function DetalhesProduto() {
                 <div className="info-desc">
                   <span>
                     {" "}
-                    Otima barraca para acampar com a mulher e deixar uns
-                    herdeiros no mundo. 🥰{" "}
+                    Alugue uma barraca de camping e aproveite ao máximo suas aventuras ao ar livre!
+                    {" "}
                   </span>
                 </div>
               </div>
@@ -234,11 +236,13 @@ export default function DetalhesProduto() {
 
                 <div className="d-flex align-items-center">
                   <div className="total-diaria d-flex justify-content-center mx-2">
-                    <span> R$ 38,90</span>
+                    <span> R$ 10,00</span>
                   </div>
 
                   <div className="botao-content d-flex justify-content-center">
-                    <button> Alugar </button>
+                    <Button>                     
+                      <Link to={"/carrinho-pagamento"} className="text-reset text-decoration-none">Alugar</Link>
+                    </Button>
                   </div>
                 </div>
 
