@@ -7,8 +7,8 @@ import { MinhaAreaContext } from "./MinhaAreaContext";
 
 export default function PageMinhaArea() {
   const [produtos, setProdutos] = useState();
-  const token = localStorage.getItem("token");
-
+  const token = localStorage.getItem("token").replace(/"/g, '');
+  console.log(token);
   function getProdutos() {
     fetch("http://localhost:8000/api/products/user", {
       headers: {
@@ -18,7 +18,7 @@ export default function PageMinhaArea() {
     })
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data.products);
+        console.log(data);
         setProdutos(data.products);
       });
   }

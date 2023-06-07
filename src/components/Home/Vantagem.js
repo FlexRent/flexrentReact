@@ -7,7 +7,7 @@ return (
     <section className="vantagem pb-5">
         <div className="row">
             <div className="titulo col-12 col-md-4 d-flex justify-content-end align-items-end">
-                <h3>Vantagens em ser Rent<spa className="ponto">.</spa> </h3>
+                <h3>Vantagens em ser Rent<span className="ponto">.</span> </h3>
             </div>
             <div className="icons col-12 col-md-8">
                 <div className="titles d-flex justify-content-start align-items-center mx-5">

@@ -105,20 +105,18 @@ export default function Header({ isHome }) {
               </Form>
             </Nav>
             <Nav>
-              <Nav.Link>
-                {
-                  user ?
-                    <NavDropdown title={user.first_name} id="collasible-nav-dropdown">
-                      <Link
-                        to={"/minha-area"}
-                        className="text-reset text-decoration-none dropdown-item"
-                      >
-                        Minha área
-                      </Link>
-                    </NavDropdown>
-                    : ""
-                }
-              </Nav.Link>
+              {
+                user ?
+                  <NavDropdown title={user.first_name} id="collasible-nav-dropdown">
+                    <Link
+                      to={"/minha-area"}
+                      className="text-reset text-decoration-none dropdown-item"
+                    >
+                      Minha área
+                    </Link>
+                  </NavDropdown>
+                  : ""
+              }
               {user ? (
                 <Nav.Link className={"align-self-center"} onClick={() => logout()}>Logout</Nav.Link>
               ) : (
