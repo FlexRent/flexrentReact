@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './css/Categorias.css';
 
 
@@ -45,7 +46,9 @@ export default function Categorias(){
         </div>
 
         <div className="end-content-cat d-flex align-items-end justify-content-center"> 
+        <Link className="text-reset text-decoration-none" to={'/produtos'}>
           <button> Ver todos</button>
+        </Link>
         </div>
 
 </section>

@@ -9,14 +9,14 @@ export default function ProdutosLocados() {
         <section className= "produtos-locados-content">
 
         <div className='row d-flex justify-content-center pt-3'> 
-            <CheckInComponente/>
+            {/* <CheckInComponente/> */}
         </div>
              
 
         <div className='row d-flex justify-content-center pt-4'> 
-        
+{/*         
                 <CardLocados/>
-                <CardLocados/>
+                <CardLocados/> */}
         </div>
             
             

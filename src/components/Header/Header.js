@@ -87,7 +87,9 @@ export default function Header({ isHome }) {
                 <NavDropdown.Item>Praia</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item>
+                <Link className="text-reset text-decoration-none" to={'/produtos'}>
                   Ver todos
+                </Link>
                 </NavDropdown.Item>
               </NavDropdown>
 

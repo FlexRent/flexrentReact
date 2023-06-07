@@ -21,7 +21,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
       window.location.reload(true);
     }, 4000);
   }
-  // console.log(listaEnderecos)
+  console.log(listaProdutos)
   return listaProdutos ? (
     <>
       <div className="button-novo d-flex justify-content-end align-items-center">
@@ -38,7 +38,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
             <div className="row">
               <div className="col-3">
                 <img
-                  src={produto.images}
+                  src={produto.image}
                   className="card-img p-3 border-radius-10"
                   alt={produto.name}
                 />

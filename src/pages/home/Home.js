@@ -18,7 +18,7 @@ export default function PageHome() {
       </div>
 
       {/* <ListaTodasCategorias /> */}
-      <ListaCategoria categoria={"Camping"} />
+      {/* <ListaCategoria categoria={"Camping"} /> */}
       <Vantagem />
       <ComoFunciona />
       <Categorias />

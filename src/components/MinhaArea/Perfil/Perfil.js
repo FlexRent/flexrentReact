@@ -31,7 +31,7 @@ export default function Carteira() {
                         <div className='estrela-img d-flex justify-content-center align-items-center'>
                             <img src='./assets/minhaArea/star.png' alt='avaliacao'></img>
                         </div>
-                        <span className='avaliacao-res px-3'>{user.assessment.toFixed(2)}</span>
+                        <span className='avaliacao-res px-3'>{user ? user.assessment.toFixed(2) : "5.00"}</span>
                     </div>
                 </div>
 
