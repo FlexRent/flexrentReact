@@ -3,9 +3,13 @@ import { useState } from "react";
 import CompFormEndereco from "./CompFormEndereco";
 import CompInputHora from "./CompInputHora";
 import CompCardEndereco from "./CompCardEndereco";
+import { useContext } from "react";
+import { MinhaAreaContext } from "../../../pages/minhaArea/MinhaAreaContext";
 
-export default function FormsProduto2({ produtos, backForm }) {
+export default function FormsProduto2({ produtos, enderecos, backForm }) {
   const produto = produtos;
+  const endereco = enderecos;
+  const listaEnderecos = useContext(MinhaAreaContext).enderecos;
   const [produtoAnyTime, setProdutoAnyTime] = useState(produto.any_time);
   const [customTimeFrom, setCustomTimeFrom] = useState(
     produto.custom_time_from
@@ -16,6 +20,7 @@ export default function FormsProduto2({ produtos, backForm }) {
   const [rentDay, setRentDay] = useState(produto.rent_day);
 
   //  console.log(produto);
+  //  console.log(listaEnderecos)
 
   // ****** Selecionar Endereco ******************
   const [enderecoSelecionado, setEnderecoSelecionado] = useState("");
@@ -27,7 +32,7 @@ export default function FormsProduto2({ produtos, backForm }) {
     if (enderecoSelecionado === "novo-end") {
       return <CompFormEndereco />;
     } else {
-      return <CompCardEndereco />;
+      return <CompCardEndereco enderecos={listaEnderecos} />;
     }
   };
 
@@ -139,7 +144,7 @@ export default function FormsProduto2({ produtos, backForm }) {
           <span> Selecione os dias </span>
           <div className="d-flex justify-content-between mt-2">
 
-          <div className="col-6 col-md-6">
+            <div className="col-6 col-md-6">
 
               <select
                 className="form-select form-select-md custom-border"

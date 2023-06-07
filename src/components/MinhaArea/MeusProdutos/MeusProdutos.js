@@ -6,16 +6,17 @@ import "./css/meusProdutos.css";
 
 // import { MinhaAreaContext } from "./MinhaAreaContext";
 
-// import FormsProduto2 from "./FormsProduto2";
 
 export default function MeusProdutos() {
   const [novoProduto, setNovoProduto] = useState(true);
   const [primeiroForm, setPrimeiroForm] = useState(true);
   const [produto, setProduto] = useState();
+  const [endereco, setEndereco] = useState();
 
-  const novoProdutoTela = (produto) => {
-    // console.log(produto);
+  const novoProdutoTela = (produto, endereco) => {
+    // console.log(endereco);
     setProduto(produto);
+    setEndereco(endereco);
     setNovoProduto(!novoProduto);
   };
 
@@ -29,12 +30,12 @@ export default function MeusProdutos() {
     </div>
   ) : primeiroForm ? (
     <div className="FormsProduto1">
-      
+
       <FormsProduto1 produtos={produto} back={novoProdutoTela} next={trocarForm} />
     </div>
   ) : (
     <div className="FormsProduto2">
-      <FormsProduto2 produtos={produto}  backForm={trocarForm} />
+      <FormsProduto2 produtos={produto} enderecos={endereco} backForm={trocarForm} />
     </div>
   );
 }

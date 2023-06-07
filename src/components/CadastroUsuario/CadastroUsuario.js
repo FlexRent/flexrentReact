@@ -4,7 +4,7 @@ import { Image, Form, Button, Container, Col, Row } from 'react-bootstrap';
 
 export default function CadastroUsuario({ next }) {
   const handleSubmit = (event) => {
-    console.log("entrou")
+    // console.log("entrou")
     event.preventDefault();
     const formData = new FormData(event.target);
     if (formData.get('password') === formData.get('confirmPassword')) {
@@ -26,7 +26,7 @@ export default function CadastroUsuario({ next }) {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           const userData = data;
           // salvando no localStorage do navegador
           localStorage.setItem("user", JSON.stringify(userData.user));

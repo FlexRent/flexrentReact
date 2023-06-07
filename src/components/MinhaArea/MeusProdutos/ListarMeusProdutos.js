@@ -4,7 +4,8 @@ import "./css/listarMeusProdutos.css";
 
 export default function ListarMeusProdutos({ onButtonClick }) {
   const listaProdutos = useContext(MinhaAreaContext).produtos;
-  const token = localStorage.getItem("token");
+  
+  const token = localStorage.getItem("token").replace(/"/g, '');
 
   function deleteProduto(id) {
     fetch(`http://127.0.0.1:8000/api/products/${id}`, {
@@ -13,12 +14,14 @@ export default function ListarMeusProdutos({ onButtonClick }) {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
       },
-    });
+    }).then(response => response.json()).then(data => console.log(data));
 
     // console.log("Produto deletado");
-    window.location.reload(true);
+    setTimeout(() => {
+      window.location.reload(true);
+    }, 4000);
   }
-console.log(listaProdutos)
+  // console.log(listaEnderecos)
   return listaProdutos ? (
     <>
       <div className="button-novo d-flex justify-content-end align-items-center">
@@ -75,7 +78,7 @@ console.log(listaProdutos)
       <div className="button-novo d-flex justify-content-end align-items-center">
         <button onClick={onButtonClick}> Novo </button>
       </div>
-      <p>Tem que fazer uma página para essa parte de carregando</p>
+      <p className="d-flex align-items-center justify-content-center h2 mt-5 text-center">Nenhum produto cadastrado</p>
     </>
   );
 }
