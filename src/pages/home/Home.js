@@ -17,7 +17,7 @@ export default function PageHome() {
         <img src="./assets/home/banner.png" alt="banner" className="banner-image" />
       </div>
 
-      <ListaTodasCategorias />
+      {/* <ListaTodasCategorias /> */}
       <ListaCategoria categoria={"Camping"} />
       <Vantagem />
       <ComoFunciona />

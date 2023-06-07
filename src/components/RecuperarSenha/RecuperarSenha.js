@@ -36,7 +36,7 @@ export default function RecuperarSenha() {
       }
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       alert("Senha alterada com sucesso");
       navigate("/login");
     } catch (error) {

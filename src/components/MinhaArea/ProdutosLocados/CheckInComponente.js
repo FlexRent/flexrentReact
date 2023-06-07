@@ -9,9 +9,9 @@ export default function CheckInComponente(){
 
             <div className='row '>
                 <div className='observacao-content col-8'>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Observações</label>
-                        <textarea class="form-control custom-border" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    <div className="mb-3">
+                        <label for="exampleFormControlTextarea1" className="form-label">Observações</label>
+                        <textarea className="form-control custom-border" id="exampleFormControlTextarea1" rows="4"></textarea>
                     </div>
                 </div>
 

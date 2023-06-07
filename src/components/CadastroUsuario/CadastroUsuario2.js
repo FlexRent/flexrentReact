@@ -37,11 +37,10 @@ export default function CadastroUsuario2({ next, back }) {
         setEstado(event.target.value);
     };
 
-    const token = localStorage.getItem("token");
-    const tokenCerto = token.replace(/"/g, '');
+    const token = localStorage.getItem("token").replace(/"/g, '');
     const user = JSON.parse(localStorage.getItem("user"))
     const handleSubmit = (event) => {
-        console.log("entrou")
+        // console.log("entrou")
         event.preventDefault();
         const formData = new FormData(event.target);
 
@@ -50,7 +49,7 @@ export default function CadastroUsuario2({ next, back }) {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
-                Authorization: `Bearer ${tokenCerto}`,
+                Authorization: `Bearer ${token}`,
             },
             body: JSON.stringify({
                 user_id: user.id,
@@ -62,17 +61,16 @@ export default function CadastroUsuario2({ next, back }) {
                 district: formData.get('district'),
                 city: formData.get('city'),
                 state: formData.get('state'),
-                zipcode: formData.get('zipcode').replace(/-/g, ""),
-                password: formData.get('password')
+                zipcode: formData.get('zipcode').replace(/-/g, "")
             }),
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                // console.log(data);
                 next(3)
-                console.log("next")
+                // console.log("next")
             });
-        console.log("saiu")
+        // console.log("saiu")
     }
 
     return (

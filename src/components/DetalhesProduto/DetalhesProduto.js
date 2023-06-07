@@ -27,7 +27,7 @@ export default function DetalhesProduto() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.product);
+        // console.log(data.product);
         setProduct(data.product);
       });
 
