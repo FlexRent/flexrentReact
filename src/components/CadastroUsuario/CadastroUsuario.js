@@ -1,4 +1,5 @@
 
+
 import { Image, Form, Button, Container, Col, Row } from 'react-bootstrap';
 
 export default function CadastroUsuario({ next }) {
@@ -47,19 +48,19 @@ export default function CadastroUsuario({ next }) {
           </div>
           <Form onSubmit={handleSubmit} className="border rounded-bottom p-4" style={{ height: '50vh', width: '80%' }}>
             <Row>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formNome">
                   <Form.Label>Nome</Form.Label>
                   <Form.Control name="first_name" type="text" placeholder="Digite seu nome" />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formSobrenome">
                   <Form.Label>Sobrenome</Form.Label>
                   <Form.Control name="last_name" type="text" placeholder="Digite seu sobrenome" />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formEmail">
                   <Form.Label>Email</Form.Label>
                   <Form.Control name="email" type="email" placeholder="Digite seu email" />
@@ -71,7 +72,7 @@ export default function CadastroUsuario({ next }) {
                   <Form.Control name="cpf" type="number" placeholder="Digite seu cpf" />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formGenero">
                   <Form.Label>Gênero</Form.Label>
                   <Form.Control name="gender" as="select" defaultValue="Selecione">
@@ -82,25 +83,25 @@ export default function CadastroUsuario({ next }) {
                   </Form.Control>
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formTelefone">
                   <Form.Label>Telefone</Form.Label>
                   <Form.Control name="phone" type="tel" placeholder="Digite seu telefone" />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formNascimento">
                   <Form.Label>Data de Nascimento</Form.Label>
                   <Form.Control name="birth_date" type="date" placeholder="Digite sua data de nascimento" />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formSenha">
                   <Form.Label>Senha</Form.Label>
                   <Form.Control name="password" type="password" placeholder="Digite sua senha" />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col sm={6}>
                 <Form.Group controlId="formConfirmacaoSenha">
                   <Form.Label>Confirmação de Senha</Form.Label>
                   <Form.Control name="confirmPassword" type="password" placeholder="Confirme sua senha" />
@@ -116,6 +117,5 @@ export default function CadastroUsuario({ next }) {
         </div>
       </div>
     </Container>
-
   )
 }

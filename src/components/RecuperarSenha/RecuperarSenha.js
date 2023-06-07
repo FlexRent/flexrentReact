@@ -50,23 +50,25 @@ export default function RecuperarSenha() {
       <Header backgroundColor={"#16697A"} />
 
       <Container>
-        <div className="d-flex justify-content-center align-items-center vh-100">
-          <Image
-            src="./assets/recuperarSenha/recuperarSenha.png"
-            className="mx-5"
-            style={{ height: "60vh" }}
-          />
-          <div className="d-flex flex-column justify-content-center align-items-center">
+        <div className="d-flex justify-content-center align-items-center vh-100 row">
+          <div className="col-10 col-md-6 d-flex justify-content-center" > 
+          <div className="d-flex justify-content-center align-items-center"style={{width: '80%'}}> 
+            <img src='./assets/recuperarSenha/recuperarSenha.png'  className="mx-5" style={{ height: "100%" }}/>
+          </div>
+            
+          </div>
+
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <div
               className="border rounded-top"
-              style={{ width: "120%", backgroundColor: "#4BBE8F" }}
+              style={{ width: "70%", backgroundColor: "#4BBE8F" }}
             >
               <h4 className=" ms-3 my-3 text-white">Recuperar Senha</h4>
             </div>
             <Form
               onSubmit={handleSubmit}
               className="border rounded-bottom p-4"
-              style={{ height: "30vh", width: "120%" }}
+              style={{ height: "35vh", width: "70%" }}
             >
               <Form.Group controlId="email">
                 <Form.Label>E-mail</Form.Label>
@@ -104,7 +106,7 @@ export default function RecuperarSenha() {
                   <Button
                     type="submit"
                     className="px-3"
-                    style={{ backgroundColor: "#4BBE8F" }}
+                    style={{ backgroundColor: "#4BBE8F", border: 'none'}}
                   >
                     Continuar
                   </Button>

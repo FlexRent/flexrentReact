@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import "./css/NotFound.css";
 
-export default function NotFound() {
+export default function NotFoundComponent() {
   return (
     <section>
+
       <div className="not-found-content d-flex justify-content-center">
         <div className="not-found d-flex align-items-end">
           <img alt="Not Found" src="./assets/notFound/notfound.jpg" />
@@ -18,6 +19,7 @@ export default function NotFound() {
           </Link>
         </div>
       </div>
+
     </section>
   );
 }

@@ -26,7 +26,7 @@ export default function Carteira(){
                 </div>
 
                 <div className="col-12 col-md-6 d-flex align-items-center justify-content-center" id='saldo-valor'>
-                    <span>R$ 398,00</span>
+                    <span>R$ 000,00</span>
                 </div>
 
                 <div className="col-12 col-md-3 d-flex align-items-center justify-content-center" id='saldo-button'>

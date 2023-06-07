@@ -5,6 +5,7 @@ import HeaderButtons from "../../components/MinhaArea/HeaderContent/HeaderButton
 import Perfil from "../../components/MinhaArea/Perfil/Perfil";
 import { MinhaAreaContext } from "./MinhaAreaContext";
 
+
 export default function PageMinhaArea() {
   const [produtos, setProdutos] = useState();
   const token = localStorage.getItem("token").replace(/"/g, '');

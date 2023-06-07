@@ -2,7 +2,7 @@ import './css/cartaoInfo.css'
 
 export default function CartaoInfo(){
     return(
-    <div className='row rentall-card justify-content-center align-items-center'>
+    <div className='row flexrent-card justify-content-center align-items-center'>
         <div className='col-8'> 
             <span> Cartão nubank</span>
         </div>

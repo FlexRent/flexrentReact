@@ -13,16 +13,19 @@ export default function HomeRent() {
   return (
     <div>
       <Header isHome={true} />
+      <div className="banner">
+        <img src="./assets/home/banner.png" alt="banner" className="banner-image" />
+      </div>
 
-            {/* <ListaTodasCategorias/> */}
-            {/* <ListaCategoria categoria={"Camping"}/> */}
-            {/* <Vantagem/>
-            <ComoFunciona/>
-            <Categorias/> */}
-            <Vantagem/>
-            <ComoFunciona/>
-            <Categorias/> 
-            <Footer />
-        </div>
-    );
+      {/* <ListaTodasCategorias/> */}
+      <ListaCategoria categoria={"Camping"} />
+      {/* <Vantagem/>
+      <ComoFunciona/>
+      <Categorias/> */}
+      {/* <Vantagem/>
+        <ComoFunciona/>
+        <Categorias/> 
+        <Footer /> */}
+    </div>
+  );
 }

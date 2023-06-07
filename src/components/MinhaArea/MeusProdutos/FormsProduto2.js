@@ -138,44 +138,21 @@ export default function FormsProduto2({ produtos, backForm }) {
         <div className="dias-content mt-2">
           <span> Selecione os dias </span>
           <div className="d-flex justify-content-between mt-2">
-            <div className="form-check col-4">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="radioDia"
-                id="todos-dias"
-                // checked={rentDay === "ever_day" ? true : false}
-              />
-              <label className="form-check-label" htmlFor="todos-dias">
-                Todos os dias
-              </label>
+
+          <div className="col-6 col-md-6">
+
+              <select
+                className="form-select form-select-md custom-border"
+                aria-label="Default select example"
+                id="estado"
+              >
+                <option defaultValue>Dias disponivies para retirada e devolução </option>
+                <option value="1">Todos os dias</option>
+                <option value="2">Dias de uteis</option>
+                <option value="2">Fim de semana</option>
+              </select>
             </div>
 
-            <div className="form-check col-4">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="radioDia"
-                id="dias-uteis"
-                // checked={rentDay === "weekday" ? true : false}
-              />
-              <label className="form-check-label" htmlFor="dias-uteis">
-                Dias utéis
-              </label>
-            </div>
-
-            <div className="form-check col-md-4">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="radioDia"
-                id="fim-semana"
-                // checked={rentDay === "weekend" ? true : false}
-              />
-              <label className="form-check-label" htmlFor="fim-semana">
-                Fim de semana
-              </label>
-            </div>
           </div>
         </div>
       </div>

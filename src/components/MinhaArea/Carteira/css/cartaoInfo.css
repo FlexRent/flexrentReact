@@ -1,4 +1,4 @@
-.rentall-card{
+.flexrent-card{
     width: 95%;
     height: 42px;
     background-color: #4BBE8F;
@@ -9,14 +9,14 @@
     margin-top: 18px;
 }
 
-.rentall-card button{ 
+.flexrent-card button{ 
     border: none;
     background: none;
     padding: 0;
     cursor: pointer;    
 }
 
-.rentall-card button img{ 
+.flexrent-card button img{ 
     width: 25px;
     
 }

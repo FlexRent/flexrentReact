@@ -1,0 +1,45 @@
+.content-checkin{ 
+    height: 200px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 6px;
+}
+
+.content-checkin .check-title{ 
+    height: 20%;
+}
+
+.check-title span { 
+    font-size: x-large;
+    font-weight: 300;
+    color: #135967;
+}
+
+.content-checkin .row{ 
+    height: 85%;
+}
+
+.observacao-content{
+    color: #135967;
+
+}
+
+.buttons-content-check{ 
+    width: 90%;
+}
+
+.buttons-check button{ 
+    border: none;
+    height: 45px;
+    font-size: 1.1rem;
+}
+
+.buttons-check .btn-cancelar{
+    background-color: white;
+    color: #4BBE8F;
+}
+
+.buttons-check .btn-finalizar{ 
+    background-color: #4BBE8F;
+    color: white;
+}

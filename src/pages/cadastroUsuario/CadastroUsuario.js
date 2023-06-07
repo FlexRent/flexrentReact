@@ -30,7 +30,6 @@ export default function PageCadastroUsuario() {
                         return <CadastroUsuario next={proximoForm} />
                 }
             })()}
-            {/* <CadastroUsuario /> */}
             <Footer />
         </>
     )
