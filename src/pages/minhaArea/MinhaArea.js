@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import HeaderButtons from "../../components/MinhaArea/HeaderContent/HeaderButtons";
 import Perfil from "../../components/MinhaArea/Perfil/Perfil";
 import { MinhaAreaContext } from "./MinhaAreaContext";
@@ -27,21 +28,20 @@ export default function PageMinhaArea() {
   }, []);
 
   return (
-    <>
+    <MinhaAreaContext.Provider value={{ produtos }}>
       <Header backgroundColor={"#16697A"} />
       <section>
-        <MinhaAreaContext.Provider value={{ produtos }}>
-          <div className="row flex-xl-nowrap mt-5">
-            <div className="perfil col-12 col-md-4 ">
-              <Perfil />
-            </div>
-
-            <div className="content-area col-12 col-md-8 ">
-              <HeaderButtons />
-            </div>
+        <div className="row flex-xl-nowrap mt-5">
+          <div className="perfil col-12 col-md-4 ">
+            <Perfil />
           </div>
-        </MinhaAreaContext.Provider>
+
+          <div className="content-area col-12 col-md-8 ">
+            <HeaderButtons />
+          </div>
+        </div>
       </section>
-    </>
+      <Footer />
+    </MinhaAreaContext.Provider>
   );
 }

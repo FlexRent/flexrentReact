@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./css/NotFound.css";
 
 export default function NotFound() {
@@ -10,7 +11,11 @@ export default function NotFound() {
       </div>
       <div className="button-content">
         <div className="d-flex justify-content-center">
-          <button> Inicio</button>
+          <Link to={"/"} className="text-reset text-decoration-none">
+            <button>
+              Inicio
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,10 +1,9 @@
-import { Image, Form, Button, Navbar, Container } from "react-bootstrap";
-import Header from "../Header/Header";
+import { Image, Form, Button, Row, Col, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-export default function CadastroUsuario3() {
+export default function CadastroUsuario3({ back }) {
   return (
-    <>
-      <Header backgroundColor={"#16697A"} />
+    <Container>
       <div className="d-flex justify-content-center align-items-center vh-100">
         <Image
           src="./assets/cadastroUsuario/documentacao.png"
@@ -59,18 +58,32 @@ export default function CadastroUsuario3() {
                 style={{ width: "400px" }}
               />
             </Form.Group>
-            <div className="d-flex justify-content-between my-5">
-              <Button
-                variant="primary"
-                className="mx-auto px-5"
-                style={{ backgroundColor: "#4BBE8F" }}
-              >
-                Finalizar
-              </Button>
-            </div>
+            <Row>
+              {/* <Col>
+                <div className="d-flex justify-content-between my-5">
+                  <div className="ms-auto">
+                    <Button onClick={() => back(2)} className='px-5' style={{ backgroundColor: '#4BBE8F' }}>Voltar</Button>
+                  </div>
+                </div>
+              </Col> */}
+              <Col>
+                <div className="d-flex justify-content-between my-5">
+                  <Link to={"/"} className="text-reset text-decoration-none">
+                    <Button
+                      variant="primary"
+                      className="mx-auto px-5"
+                      style={{ backgroundColor: "#4BBE8F" }}
+                    >
+                      Finalizar
+                    </Button>
+                  </Link>
+                </div>
+              </Col>
+            </Row>
+
           </Form>
         </div>
       </div>
-    </>
+    </Container>
   );
 }

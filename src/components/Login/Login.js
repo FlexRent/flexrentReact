@@ -1,6 +1,5 @@
 import { Image, Form, Button, Container, Row, Col } from "react-bootstrap";
 import "./css/login.css";
-import Header from "../Header/Header";
 import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
@@ -54,7 +53,6 @@ export default function Login() {
 
   return (
     <>
-      <Header backgroundColor={"#16697A"} />
       <Container>
         <Row>
           <div className="d-flex justify-content-center align-items-center vh-100">

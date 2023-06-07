@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import "../../components/Home/css/Home.css";
-
 import Footer from "../../components/Footer/Footer";
 import Categorias from "../../components/Home/Categorias";
 import ComoFunciona from "../../components/Home/ComoFunciona";
 import Vantagem from "../../components/Home/Vantagem";
 import ListaTodasCategorias from "../../components/ListaProdutos/ListaTodasCategorias";
 import ListaCategoria from "../../components/ListaProdutos/ListaCategoria";
+import "../../components/Home/css/Home.css";
 
-export default function HomeRent() {
+
+export default function PageHome() {
   return (
     <div>
       <Header isHome={true} />

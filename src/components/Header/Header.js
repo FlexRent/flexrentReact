@@ -28,6 +28,7 @@ export default function Header({ isHome }) {
       },
     });
     localStorage.removeItem("user");
+    localStorage.removeItem("token");
     navigate("/");
   }
 
@@ -108,14 +109,12 @@ export default function Header({ isHome }) {
                 {
                   user ?
                     <NavDropdown title={user.first_name} id="collasible-nav-dropdown">
-                      <NavDropdown.Item>
-                        <Link
-                          to={"/minha-area"}
-                          className="text-reset text-decoration-none"
-                        >
-                          Minha área
-                        </Link>
-                      </NavDropdown.Item>
+                      <Link
+                        to={"/minha-area"}
+                        className="text-reset text-decoration-none dropdown-item"
+                      >
+                        Minha área
+                      </Link>
                     </NavDropdown>
                     : ""
                 }
