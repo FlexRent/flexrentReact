@@ -9,7 +9,7 @@ import ListaCategoria from "../../components/ListaProdutos/ListaCategoria";
 import "../../components/Home/css/Home.css";
 
 
-export default function PageHome() {
+export default function PageListaProdutos() {
   return (
     <div>
       <Header isHome={true} />

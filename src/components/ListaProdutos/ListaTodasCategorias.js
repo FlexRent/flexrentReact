@@ -3,7 +3,7 @@ import './css/ListaTodasCategorias.css'
 export default function ListaTodasCategorias(){
     return (
         <section className='lista-content'>
-            <div className='lista-categoria-content container'> 
+            {/* <div className='lista-categoria-content container'> 
                 <div className='title-categoria d-flex align-items-center '>
                     <h2> Camping </h2> 
                 </div>
@@ -25,7 +25,7 @@ export default function ListaTodasCategorias(){
                 <div className='title-categoria d-flex align-items-center '>
                     <h2> Praia </h2> 
                 </div>
-            </div>
+            </div> */}
 
         </section>
     )

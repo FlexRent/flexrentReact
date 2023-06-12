@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Image,
   Row,
@@ -6,6 +7,9 @@ import {
 import Header from "../Header/Header";
 
 export default function DetalhesLocacao() {
+
+  
+
   return (
     <>
       <Header backgroundColor={"#16697A"} />

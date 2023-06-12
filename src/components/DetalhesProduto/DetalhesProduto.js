@@ -7,6 +7,8 @@ import {
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./css/DetalhesProduto.css";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function DetalhesProduto() {
   const [productImages, setProductImages] = useState([]);
@@ -33,11 +35,10 @@ export default function DetalhesProduto() {
 
     // Atualize os estados com os dados do produto recuperados
     const imagesFromDatabase = [
-      "./assets/home/barraca.jpg",
-      "./assets/home/camping.jpg",
-      "./assets/home/barraca.jpg",
-      "./assets/home/camping.jpg",
-      "./assets/home/barraca.jpg",
+      "./assets/skate-gustavao.jpg",
+      "./assets/skate-gustavao2.jpg",
+      "./assets/skate-gustavao3.jpg",
+      "./assets/skate-gustavao4.jpg"
     ];
     setProductImages(imagesFromDatabase);
 
@@ -161,7 +162,7 @@ export default function DetalhesProduto() {
       <Header />
       <section className="detalhes-produto-content container">
         <div className="title-product-content d-flex justify-content-center align-items-end">
-          <h2>Barraca</h2>
+          <h2> Skate Street - Nineclouds </h2>
         </div>
 
         <div className="d-flex flex-wrap justify-content-center align-items-center">
@@ -183,12 +184,12 @@ export default function DetalhesProduto() {
 
             <div className="product-info m-1">
               <div className="info-desc-content m-2">
-                <span className="title-info d-block"> Descrição</span>
+                <span className="title-info d-block"> Descrição </span>
                 <div className="info-desc">
                   <span>
                     {" "}
-                    Otima barraca para acampar com a mulher e deixar uns
-                    herdeiros no mundo. 🥰{" "}
+                    Este skate street é uma escolha perfeita para skatistas apaixonados pela modalidade street.
+                    {" "}
                   </span>
                 </div>
               </div>
@@ -234,11 +235,13 @@ export default function DetalhesProduto() {
 
                 <div className="d-flex align-items-center">
                   <div className="total-diaria d-flex justify-content-center mx-2">
-                    <span> R$ 38,90</span>
+                    <span> R$ 10,00</span>
                   </div>
 
                   <div className="botao-content d-flex justify-content-center">
-                    <button> Alugar </button>
+                    <Button>                     
+                      <Link to={"/carrinho-pagamento"} className="text-reset text-decoration-none">Alugar</Link>
+                    </Button>
                   </div>
                 </div>
 
