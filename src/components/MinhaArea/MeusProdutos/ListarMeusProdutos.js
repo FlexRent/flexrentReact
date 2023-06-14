@@ -8,7 +8,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
   const token = localStorage.getItem("token").replace(/"/g, '');
 
   function deleteProduto(id) {
-    fetch(`http://127.0.0.1:8000/api/products/${id}`, {
+    fetch(`http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/products/${id}`, {
       method: "DELETE",
       headers: {
         Accept: "application/json",

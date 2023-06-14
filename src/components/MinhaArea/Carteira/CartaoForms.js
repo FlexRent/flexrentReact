@@ -8,7 +8,7 @@ export default function CartaoForms({ clickVoltar }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    fetch("http://127.0.0.1:8000/api/cards", {
+    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/cards", {
       method: "POST",
       headers: {
         Accept: "application/json",

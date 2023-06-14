@@ -21,7 +21,7 @@ export default function DetalhesProduto() {
 
   const fetchProductData = () => {
     // Lógica para buscar os dados do produto no banco de dados
-    fetch("http://127.0.0.1:8000/api/products/showOne?product_id=2", {
+    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/products/showOne?product_id=2", {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
