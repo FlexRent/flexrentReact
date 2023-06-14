@@ -7,15 +7,14 @@ import PhotoUpload from "./PhotoUpload";
 export default function FormsProduto1({ produtos, back, next }) {
   const [imagensSelecionadas, setImagensSelecionadas] = useState([]);
 
-  const produto = produtos;
-  const [produtoName, setProdutoName] = useState(produto.name);
-  const [produtoBrandName, setProdutoBrandName] = useState(produto.brand_name);
+  const [produtoName, setProdutoName] = useState(produtos.name);
+  const [produtoBrandName, setProdutoBrandName] = useState(produtos.brand_name);
   const [produtoDescription, setProdutoDescription] = useState(
-    produto.description
+    produtos.description
   );
-  const [produtoPrice, setProdutoPrice] = useState(produto.product_price);
-  const [produtoRentPrice, setProdutoRentPrice] = useState(produto.daily_price);
-  const [produtoCategory, setProdutoCategory] = useState(produto.category);
+  const [produtoPrice, setProdutoPrice] = useState(produtos.product_price);
+  const [produtoRentPrice, setProdutoRentPrice] = useState(produtos.daily_price);
+  const [produtoCategory, setProdutoCategory] = useState(produtos.category);
 
   const handlePhotoChange = (imagens) => {
     setImagensSelecionadas(imagens);
@@ -62,7 +61,7 @@ export default function FormsProduto1({ produtos, back, next }) {
             className="form-select form-select-md custom-border"
             aria-label="Default select example"
             id="categoria-produto"
-            value={produto.category ? produtoCategory.id : ""}
+            value={produtos.category ? produtoCategory.id : ""}
             onChange={handleCategoryChange}
           >
             <option>Selecione a categoria</option>

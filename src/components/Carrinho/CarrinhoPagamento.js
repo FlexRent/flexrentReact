@@ -49,7 +49,7 @@ const CarrinhoPagamento = () => {
           <section className="mt-5"></section>
           <Col id="borda3" className="mx-2" md={5}>
             <div className="d-flex">
-              <Image src="./assets/skate-gustavao2.jpg" alt="Produto" className="me-3" style={{ width: '200px', height: 'auto' }} />
+              <Image src="./assets/apresentacao/skate-gustavao2.jpg" alt="Produto" className="me-3" style={{ width: '200px', height: 'auto' }} />
               <div className="textocor1">
                 <h3 className=" textoProduto1">Skate Street - Nineclouds</h3>
                 <p>Período de Diárias: 5 dias</p>

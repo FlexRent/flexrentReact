@@ -4,7 +4,7 @@ import "./css/listarMeusProdutos.css";
 
 export default function ListarMeusProdutos({ onButtonClick }) {
   const listaProdutos = useContext(MinhaAreaContext).produtos;
-  
+
   const token = localStorage.getItem("token").replace(/"/g, '');
 
   function deleteProduto(id) {
@@ -14,12 +14,10 @@ export default function ListarMeusProdutos({ onButtonClick }) {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
       },
-    }).then(response => response.json()).then(data => console.log(data));
-
-    // console.log("Produto deletado");
-    setTimeout(() => {
+    }).then(response => response.json()).then(data => {
+      console.log(data)
       window.location.reload(true);
-    }, 4000);
+    });
   }
   // console.log(listaEnderecos)
   return listaProdutos ? (

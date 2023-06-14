@@ -8,7 +8,9 @@ import { MinhaAreaContext } from "./MinhaAreaContext";
 
 export default function PageMinhaArea() {
   const [produtos, setProdutos] = useState();
-  const [enderecos, setEndereco] = useState();
+  const [enderecos, setEnderecos] = useState();
+  const [cartoes, setCartoes] = useState();
+
   const token = localStorage.getItem("token").replace(/"/g, '');
   // console.log(token);
   function getProdutos() {
@@ -35,17 +37,34 @@ export default function PageMinhaArea() {
       .then((response) => response.json())
       .then((data) => {
         // console.log(data.addresses);
-        setEndereco(data.addresses);
+        setEnderecos(data.addresses);
+      });
+  }
+
+  function getCardoes() {
+    const token = localStorage.getItem("token").replace(/"/g, '');
+    fetch("http://127.0.0.1:8000/api/cards/user", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      }
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data.cards);
+        setCartoes(data.cards);
       });
   }
 
   useEffect(() => {
     getProdutos();
-    getEndereco()
+    getEndereco();
+    getCardoes();
   }, []);
 
   return (
-    <MinhaAreaContext.Provider value={{ produtos, enderecos }}>
+    <MinhaAreaContext.Provider value={{ produtos, enderecos, cartoes }}>
       <Header backgroundColor={"#16697A"} />
       <section>
         <div className="row flex-xl-nowrap mt-5">
@@ -54,7 +73,7 @@ export default function PageMinhaArea() {
           </div>
 
           <div className="content-area col-12 col-md-8 ">
-            <HeaderButtons />
+            <HeaderButtons cartoes={cartoes} />
           </div>
         </div>
       </section>

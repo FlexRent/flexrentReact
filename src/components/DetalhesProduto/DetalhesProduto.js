@@ -35,10 +35,10 @@ export default function DetalhesProduto() {
 
     // Atualize os estados com os dados do produto recuperados
     const imagesFromDatabase = [
-      "./assets/skate-gustavao.jpg",
-      "./assets/skate-gustavao2.jpg",
-      "./assets/skate-gustavao3.jpg",
-      "./assets/skate-gustavao4.jpg"
+      "./assets/apresentacao/skate-gustavao.jpg",
+      "./assets/apresentacao/skate-gustavao2.jpg",
+      "./assets/apresentacao/skate-gustavao3.jpg",
+      "./assets/apresentacao/skate-gustavao4.jpg"
     ];
     setProductImages(imagesFromDatabase);
 
@@ -106,7 +106,7 @@ export default function DetalhesProduto() {
                 <span className="title-info d-block"> Periodo</span>
                 <div className="d-flex justify-content-between">
                   <div className="flex-grow-2 mx-2">
-                    <label for="dataInicio">Retirada</label>
+                    <label htmlFor="dataInicio">Retirada</label>
                     <input
                       type="date"
                       id="dataInicio"
@@ -115,7 +115,7 @@ export default function DetalhesProduto() {
                     />
                   </div>
                   <div className="flex-grow-2 mx-2">
-                    <label for="dataFim">Devolução</label>
+                    <label htmlFor="dataFim">Devolução</label>
                     <input
                       type="date"
                       id="dataFim"
@@ -204,7 +204,7 @@ export default function DetalhesProduto() {
                 <span className="title-info d-block"> Periodo</span>
                 <div className="d-flex justify-content-between">
                   <div className="flex-grow-2 mx-2">
-                    <label for="dataInicio">Retirada</label>
+                    <label htmlFor="dataInicio">Retirada</label>
                     <input
                       type="date"
                       id="dataInicio"
@@ -213,7 +213,7 @@ export default function DetalhesProduto() {
                     />
                   </div>
                   <div className="flex-grow-2 mx-2">
-                    <label for="dataFim">Devolução</label>
+                    <label htmlFor="dataFim">Devolução</label>
                     <input
                       type="date"
                       id="dataFim"
