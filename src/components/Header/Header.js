@@ -76,7 +76,7 @@ export default function Header({ isHome }) {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link>Inicio</Nav.Link>
-              <NavDropdown className="me-3" title="Categoroias" id="collasible-nav-dropdown">
+              <NavDropdown className="me-3" title="Categorias" id="collasible-nav-dropdown">
                 <NavDropdown.Item>Camping</NavDropdown.Item>
                 <NavDropdown.Item>
                   Esportivos

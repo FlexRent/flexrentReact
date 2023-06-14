@@ -49,9 +49,9 @@ const CarrinhoPagamento = () => {
           <section className="mt-5"></section>
           <Col id="borda3" className="mx-2" md={5}>
             <div className="d-flex">
-              <Image src="./assets/home/barraca.jpg" alt="Produto" className="me-3" style={{ width: '200px', height: 'auto' }} />
+              <Image src="./assets/skate-gustavao2.jpg" alt="Produto" className="me-3" style={{ width: '200px', height: 'auto' }} />
               <div className="textocor1">
-                <h3 className=" textoProduto1">Barraca Quechua confortável</h3>
+                <h3 className=" textoProduto1">Skate Street - Nineclouds</h3>
                 <p>Período de Diárias: 5 dias</p>
                 <p>Valor da Diária: R$ 10,00</p>
                 <p>Total Valor da Diária: R$ 50,00</p>

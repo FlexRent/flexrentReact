@@ -8,16 +8,6 @@ export default function ListaCategoria({ categoria }) {
 
     return (
         <>
-            {/* Ferramentas */}
-            <section className='lista-categoria-content container'>
-                <div className='title-list d-flex align-items-center '>
-                    <h2> Ferramentas </h2>
-                </div>
-
-                <div className='d-flex list-product justify-content-center align-items-center flex-wrap'>
-                    <CardProdutoFerramenta />
-                </div>
-            </section>
 
             {/* Esporte */}
             <section className='lista-categoria-content container'>
@@ -41,8 +31,20 @@ export default function ListaCategoria({ categoria }) {
                 </div>
             </section>
 
-            {/* Camping */}
+
+            {/* Ferramentas */}
             <section className='lista-categoria-content container'>
+                <div className='title-list d-flex align-items-center '>
+                    <h2> Ferramentas </h2>
+                </div>
+
+                <div className='d-flex list-product justify-content-center align-items-center flex-wrap'>
+                    <CardProdutoFerramenta />
+                </div>
+            </section>
+
+            {/* Camping */}
+            {/* <section className='lista-categoria-content container'>
                 <div className='title-list d-flex align-items-center '>
                     <h2> Camping </h2>
                 </div>
@@ -50,7 +52,7 @@ export default function ListaCategoria({ categoria }) {
                 <div className='d-flex list-product justify-content-center align-items-center flex-wrap'>
                     <CardProdutoCamping />
                 </div>
-            </section>
+            </section> */}
 
         </>
 

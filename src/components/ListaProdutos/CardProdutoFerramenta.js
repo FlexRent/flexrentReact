@@ -7,7 +7,7 @@ export default function CardProdutoFerramenta() {
         <Link to={"/detalhes-produto"} className="text-reset text-decoration-none">
             <section className='card-content'>
                 <div className='image-content p-1'>
-                    <img src='./assets/parafusadeira.jpg' />
+                    <img src='https://img.olx.com.br/images/90/901377648860163.jpg' />
                 </div>
                 <div className='title-content d-flex justify-content-center align-items-center'>
                     <span className='text-center'> Furadeira Black Decker </span>

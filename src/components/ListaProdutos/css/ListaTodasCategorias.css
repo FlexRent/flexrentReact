@@ -1,12 +1,12 @@
-.lista-content{
-min-height: 100vh;
+.lista-content {
+    min-height: 30vh;
 }
 
-.lista-categoria-content{
-    min-height: 50vh;
+.lista-categoria-content {
+    min-height: 30vh;
 }
 
-.title-categoria{
+.title-categoria {
     height: 15vh;
 }
 
