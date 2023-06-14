@@ -11,7 +11,7 @@ export default function Login() {
     const formData = new FormData(event.target);
 
     try {
-      const loginResponse = await fetch("http://localhost:8000/api/login", {
+      const loginResponse = await fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,7 +25,7 @@ export default function Login() {
       const loginData = await loginResponse.json();
 
       if (loginData.token !== undefined) {
-        const userResponse = await fetch("http://localhost:8000/api/user", {
+        const userResponse = await fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/user", {
           headers: {
             Accept: "application/json",
             Authorization: `Bearer ${loginData.token}`,

@@ -14,7 +14,7 @@ export default function PageMinhaArea() {
   const token = localStorage.getItem("token").replace(/"/g, '');
   // console.log(token);
   function getProdutos() {
-    fetch("http://localhost:8000/api/products/user", {
+    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/products/user", {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
@@ -28,7 +28,7 @@ export default function PageMinhaArea() {
   }
 
   function getEndereco() {
-    fetch("http://localhost:8000/api/addresses/user", {
+    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/addresses/user", {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
