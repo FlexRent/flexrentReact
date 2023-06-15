@@ -1,5 +1,4 @@
 name: Deploy React app to S3
-
 on:
   push:
     branches: ["main"]
@@ -11,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
       - name: Use Node.js 18.x
         uses: actions/setup-node@v3
         with:
