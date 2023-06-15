@@ -3,7 +3,7 @@ import CadastroUsuario from "../../components/CadastroUsuario/CadastroUsuario";
 import CadastroUsuario2 from "../../components/CadastroUsuario/CadastroUsuario2";
 import CadastroUsuario3 from "../../components/CadastroUsuario/CadastroUsuario3";
 import Footer from "../../components/Footer/Footer";
-import { CadastroUsuarioContext } from "./CadastroUsuarioContext"
+// import { CadastroUsuarioContext } from "./CadastroUsuarioContext"
 import { useState } from "react";
 
 export default function PageCadastroUsuario() {

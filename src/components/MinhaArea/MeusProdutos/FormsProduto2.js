@@ -8,16 +8,15 @@ import { MinhaAreaContext } from "../../../pages/minhaArea/MinhaAreaContext";
 
 export default function FormsProduto2({ produtos, enderecos, backForm }) {
   const produto = produtos;
-  const endereco = enderecos;
   const listaEnderecos = useContext(MinhaAreaContext).enderecos;
-  const [produtoAnyTime, setProdutoAnyTime] = useState(produto.any_time);
-  const [customTimeFrom, setCustomTimeFrom] = useState(
-    produto.custom_time_from
-  );
-  const [customTimeUntil, setCustomTimeUntil] = useState(
-    produto.custom_time_until
-  );
-  const [rentDay, setRentDay] = useState(produto.rent_day);
+  // const [produtoAnyTime, setProdutoAnyTime] = useState(produto.any_time);
+  // const [customTimeFrom, setCustomTimeFrom] = useState(
+  //   produto.custom_time_from
+  // );
+  // const [customTimeUntil, setCustomTimeUntil] = useState(
+  //   produto.custom_time_until
+  // );
+  // const [rentDay, setRentDay] = useState(produto.rent_day);
 
   //  console.log(produto);
   //  console.log(listaEnderecos)

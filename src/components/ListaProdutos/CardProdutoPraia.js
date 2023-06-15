@@ -6,7 +6,7 @@ export default function  CardProdutoPraia(){
     return(
         <section className='card-content'> 
             <div className='image-content p-1'> 
-            <img src='./assets/apresentacao/cadeira-praia.jpeg'/>
+            <img alt="cadeira-praia" src='./assets/apresentacao/cadeira-praia.jpeg'/>
             </div>
             <div className='title-content d-flex justify-content-center align-items-center'> 
                 <span className='text-center'> Cadeira de praia c/ apoio de copo</span>

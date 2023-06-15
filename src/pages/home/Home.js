@@ -4,8 +4,8 @@ import Footer from "../../components/Footer/Footer";
 import Categorias from "../../components/Home/Categorias";
 import ComoFunciona from "../../components/Home/ComoFunciona";
 import Vantagem from "../../components/Home/Vantagem";
-import ListaTodasCategorias from "../../components/ListaProdutos/ListaTodasCategorias";
-import ListaCategoria from "../../components/ListaProdutos/ListaCategoria";
+// import ListaTodasCategorias from "../../components/ListaProdutos/ListaTodasCategorias";
+// import ListaCategoria from "../../components/ListaProdutos/ListaCategoria";
 import "../../components/Home/css/Home.css";
 
 

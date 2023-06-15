@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import ListaTodasCategorias from "../../components/ListaProdutos/ListaTodasCategorias";
+// import ListaTodasCategorias from "../../components/ListaProdutos/ListaTodasCategorias";
 import ListaCategoria from "../../components/ListaProdutos/ListaCategoria";
 
 export default function ListaProdutos(){

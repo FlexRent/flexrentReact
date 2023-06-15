@@ -1,4 +1,4 @@
-import {  Form, Button, Container, Row, Col } from "react-bootstrap";
+import {  Form, Button, Container, Row } from "react-bootstrap";
 
 import "./css/login.css";
 import { useNavigate, Link } from "react-router-dom";
@@ -59,7 +59,7 @@ export default function Login() {
           <div className="d-flex justify-content-center align-items-center vh-100 row">
             <div className="col-12 col-md-6">
               <div className="d-flex justify-content-center align-items-center" >
-                <img src="./assets/login/login.png" className="w-100" />
+                <img alt="login" src="./assets/login/login.png" className="w-100" />
               </div>
             </div>
 

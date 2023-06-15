@@ -5,7 +5,6 @@ import {
   Image,
   Form,
   Button,
-  Navbar,
   Container,
   Modal
 } from "react-bootstrap";

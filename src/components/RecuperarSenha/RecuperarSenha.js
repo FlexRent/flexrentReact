@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button, Container, Image } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import Header from "../Header/Header";
 import { useNavigate } from "react-router-dom";
 
@@ -35,7 +35,7 @@ export default function RecuperarSenha() {
         throw new Error("Erro na solicitação");
       }
 
-      const data = await response.json();
+      // const data = await response.json();
       // console.log(data);
       alert("Senha alterada com sucesso");
       navigate("/login");
@@ -53,7 +53,7 @@ export default function RecuperarSenha() {
         <div className="d-flex justify-content-center align-items-center vh-100 row">
           <div className="col-10 col-md-6 d-flex justify-content-center" > 
           <div className="d-flex justify-content-center align-items-center"style={{width: '80%'}}> 
-            <img src='./assets/recuperarSenha/recuperarSenha.png'  className="mx-5" style={{ height: "100%" }}/>
+            <img alt="recuperar senha" src='./assets/recuperarSenha/recuperarSenha.png'  className="mx-5" style={{ height: "100%" }}/>
           </div>
             
           </div>

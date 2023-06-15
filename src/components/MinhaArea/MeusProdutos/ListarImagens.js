@@ -8,7 +8,7 @@ const ListarImagem = ({ images }) => {
         <div className="img-preview d-flex ">
            {images.map((url, index) => (
             <div key={index}>
-                <img src={url} alt={`Image ${index}`} className="img-thumbnail mx-3 border-bottom" />
+                <img src={url} alt={`${index}`} className="img-thumbnail mx-3 border-bottom" />
             </div>
            ))}
         </div>

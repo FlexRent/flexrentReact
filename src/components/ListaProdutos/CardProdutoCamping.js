@@ -6,7 +6,7 @@ export default function CardProdutoCamping() {
     return (
         <section className='card-content'>
             <div className='image-content p-1'>
-                <img src='./assets/home/barraca.jpg' />
+                <img alt="barraca" src='./assets/home/barraca.jpg' />
             </div>
             <div className='title-content d-flex justify-content-center align-items-center'>
                 <span className='text-center'>Barraca Quechua confortável</span>

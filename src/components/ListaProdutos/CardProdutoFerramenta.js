@@ -6,7 +6,7 @@ export default function  CardProdutoFerramenta(){
     return(
         <section className='card-content'> 
             <div className='image-content p-1'> 
-            <img src='./assets/apresentacao/parafusadeira.jpg'/>
+            <img alt="parafusadeira" src='./assets/apresentacao/parafusadeira.jpg'/>
             </div>
             <div className='title-content d-flex justify-content-center align-items-center'> 
                 <span className='text-center'> Furadeira Black Decker </span>

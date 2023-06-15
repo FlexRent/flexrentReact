@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./css/carrinhoFinal.css";
 import {
   Image,
-  Form,
   Button,
-  Navbar,
   Container,
   Row,
   Col,
@@ -12,21 +10,6 @@ import {
 import Header from "../Header/Header";
 
 const CarrinhoFinal = () => {
-  const [selectedCard, setSelectedCard] = useState("cadastrado");
-  const [newCardInfo, setNewCardInfo] = useState("");
-
-  const handleCardChange = (event) => {
-    setSelectedCard(event.target.value);
-  };
-
-  const handleNewCardChange = (event) => {
-    setNewCardInfo(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Lógica para finalizar o pagamento
-  };
 
   return (
     <>

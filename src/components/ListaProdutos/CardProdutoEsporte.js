@@ -7,7 +7,7 @@ export default function  CardProdutoEsporte(){
         <Link to={"/detalhes-produto"} className="text-reset text-decoration-none">
         <section className='card-content'> 
             <div className='image-content p-1'> 
-            <img src='./assets/apresentacao/skate-gustavao2.jpg'/>
+            <img alt="skate"  src='./assets/apresentacao/skate-gustavao2.jpg'/>
             </div>
             <div className='title-content d-flex justify-content-center align-items-center'> 
                 <span className='text-center'> Skate Street - Nineclouds </span>
