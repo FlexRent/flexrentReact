@@ -14,7 +14,7 @@ export default function CompCardEndereco(listaEnderecos) {
     color: corAlterada ? '#F4F4F4' : '#4BBE8F'
   };
   console.log(enderecos);
-  return (
+  return enderecos ? (
     <>
       {
         enderecos.map(endereco => (
@@ -28,5 +28,8 @@ export default function CompCardEndereco(listaEnderecos) {
       }
     </>
 
-  )
+  ) :
+    (
+      <p className="d-flex align-items-center justify-content-center h2 mt-5 text-center">Nenhum endereço cadastrado</p>
+    )
 }

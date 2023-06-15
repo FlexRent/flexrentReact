@@ -21,6 +21,6 @@ export default function CartaoInfo(cartoes) {
             </div>
         ))
     ) : (
-        <p>Não tem cartao</p>
-    )
+        <p className="d-flex align-items-center justify-content-center h2 mt-5 text-center">Nenhum cartão cadastrado</p>
+        )
 }

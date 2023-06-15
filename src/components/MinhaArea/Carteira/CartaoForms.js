@@ -27,6 +27,7 @@ export default function CartaoForms({ clickVoltar }) {
       .then(data => {
         console.log(data)
         clickVoltar();
+        window.location.reload(true);
       })
     console.log("saiu");
   }
