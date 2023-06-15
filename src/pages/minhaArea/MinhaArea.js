@@ -14,7 +14,7 @@ export default function PageMinhaArea() {
   const token = localStorage.getItem("token").replace(/"/g, '');
   // console.log(token);
   function getProdutos() {
-    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/products/user", {
+    fetch("https://flexrent-fake-api2.vercel.app/api/products/user", {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
@@ -28,7 +28,7 @@ export default function PageMinhaArea() {
   }
 
   function getEndereco() {
-    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/addresses/user", {
+    fetch("https://flexrent-fake-api2.vercel.app/api/addresses/user", {
       headers: {
         Accept: "application/json",
         Authorization: `Bearer ${token}`,
@@ -43,7 +43,7 @@ export default function PageMinhaArea() {
 
   function getCardoes() {
     const token = localStorage.getItem("token").replace(/"/g, '');
-    fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/cards/user", {
+    fetch("https://flexrent-fake-api2.vercel.app/api/cards/user", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

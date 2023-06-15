@@ -8,7 +8,7 @@ export default function CadastroUsuario({ next }) {
     event.preventDefault();
     const formData = new FormData(event.target);
     if (formData.get('password') === formData.get('confirmPassword')) {
-      fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/register", {
+      fetch("https://flexrent-fake-api2.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -17,7 +17,7 @@ export default function RecuperarSenha() {
 
     try {
       const response = await fetch(
-        "http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/recoverPassword",
+        "https://flexrent-fake-api2.vercel.app/api/recoverPassword",
         {
           method: "PATCH",
           headers: {

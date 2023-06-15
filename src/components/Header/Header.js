@@ -20,7 +20,7 @@ export default function Header({ isHome }) {
   };
 
   function logout() {
-    fetch(`http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/logout`, {
+    fetch(`https://flexrent-fake-api2.vercel.app/api/logout`, {
       method: "POST",
       headers: {
         Accept: "application/json",

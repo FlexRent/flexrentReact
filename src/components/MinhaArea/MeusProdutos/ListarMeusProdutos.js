@@ -8,7 +8,7 @@ export default function ListarMeusProdutos({ onButtonClick }) {
   const token = localStorage.getItem("token").replace(/"/g, '');
 
   function deleteProduto(id) {
-    fetch(`http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/products/${id}`, {
+    fetch(`https://flexrent-fake-api2.vercel.app/api/products/${id}`, {
       method: "DELETE",
       headers: {
         Accept: "application/json",

@@ -44,7 +44,7 @@ export default function CadastroUsuario2({ next, back }) {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        fetch("http://ec2-15-228-10-222.sa-east-1.compute.amazonaws.com:8000/api/addresses", {
+        fetch("https://flexrent-fake-api2.vercel.app/api/addresses", {
             method: "POST",
             headers: {
                 Accept: "application/json",
