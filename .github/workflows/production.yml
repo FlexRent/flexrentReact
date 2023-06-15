@@ -9,12 +9,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [10.x, 12.x, 14.x, 16.x, 18.x]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - name: Yarn Install
@@ -22,7 +22,7 @@ jobs:
           yarn install
       - name: Development Build
         run: |
-          yarn build
+          yarn build --if-present
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         env:
